@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\VotingController;
@@ -21,6 +22,10 @@ use App\Http\Controllers\AdminCandidateController;
 // AdminPages
 Route::get('admin', [AdminController::class, 'index'])->name('adminDashboard')->middleware(['auth', 'is-admin']);
 
+Route::resource('/admin/user', UserController::class);
+Route::get('/admin/kandidat/slug', [UserController::class, 'slug'])->middleware(['auth', 'is-admin']);
+
+
 // AdminPagesCandidate
 Route::get('/admin/kandidat/slug', [AdminCandidateController::class, 'slug'])->middleware(['auth', 'is-admin']);
 Route::resource('/admin/kandidat', AdminCandidateController::class)->middleware(['auth', 'is-admin']);
@@ -29,6 +34,7 @@ Route::get('/kandidat', [CandidateController::class, "index"]);
 Route::get('/kandidat/{candidate:slug}', [CandidateController::class, "show"]);
 
 // Voting
+Route::get('peringatan', [VotingController::class, 'peringatanPage'])->name('peringatanPage')->middleware(['auth']);
 Route::get('golput', [VotingController::class, 'golputPage'])->name('golputPage')->middleware(['auth']);
 Route::get('voting', [VotingController::class, 'votingPage'])->name('votingePage')->middleware(['auth']);
 Route::get('berhasil', [VotingController::class, 'successPage'])->name('successPage')->middleware(['auth']);

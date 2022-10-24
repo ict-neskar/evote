@@ -11,13 +11,18 @@ class VotingController extends Controller
 {
     public function votingPage()
     {
-        if (!Auth::user()->has_voted ) {
+        if(!Auth::check())
+        {
+            return redirect('login');
+        }elseif (now() > date('2022-11-03 00:00:00')) {
+            return view('pages.golput');
+        }
+        elseif(!Auth::user()->has_voted)
+        {
             $candidates = DB::table('candidates')->get();
             return view('pages.voting', ['candidates' => $candidates]);
-        }elseif (now() > date('2022-01-01 01:00:00')) {
-            return redirect('golput');
         }else {
-            return view('pages.hasvoted');
+            return redirect('peringatan')->with('flashMessage', 'Anda sudah pernah voting');
         }
 
     }
@@ -26,11 +31,11 @@ class VotingController extends Controller
         return view('pages.success');
     }
 
-    public function golputPage(){
-        return view('pages.golput');
-    }
+    // public function golputPage(){
+    //     return view('pages.golput');
+    // }
 
-    public function hasVotedPage(){
+    public function peringatanPage(){
         return view('pages.hasvoted');
     }
 

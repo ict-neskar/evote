@@ -24,7 +24,7 @@
             </div>
             <h2 class="fontw-7 text-center">Maaf, Waktu memilih sudah habis !</h2>
             <p class="text-center width-35 width-md-70p width-xs-100p mx-auto">
-                Anda hanya dapat melakukan Pemilihan Calon Ketua OSIS SMKN 1 Karawang tahun 2022/2023 pada jam yang sudah di tentukan
+                Anda hanya dapat melakukan Pemilihan Calon Ketua OSIS SMKN 1 Karawang tahun 2022/2023 pada waktu yang sudah di tentukan
             </p>
         </div>
         <img src="/assets/images/UI/Background/background-konfirmasi.svg" alt="" class="position-absolute top-50 start-80 start-md-90 start-lg-100 translate-middle height-100 height-md-80p">

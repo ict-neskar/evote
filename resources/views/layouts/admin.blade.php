@@ -69,8 +69,8 @@
                             </a>
                         </li>
 
-                        <li class="sidebar-item {{ (request()->is('admin/siswa', 'admin/tambah')) ? 'active' : '' }}">
-                            <a href="/admin/siswa" class='sidebar-link'>
+                        <li class="sidebar-item {{ (request()->is('admin/user', 'admin/tambah')) ? 'active' : '' }}">
+                            <a href="/admin/user" class='sidebar-link'>
                                 <i class="bi bi-people-fill"></i>
                                 <span>Siswa</span>
                             </a>
