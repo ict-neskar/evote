@@ -10,14 +10,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link link-active white fontw-5 margin-x-15 pb-1" href="index.html">Home</a>
-                    <span class="nav-link-active"></span>
+                    <a class="nav-link {{ (request()->is('/')) ? 'link-active' : '' }} white fontw-5 margin-x-15 pb-1" href="/">Home</a>
+                    <span class="{{ (request()->is('/')) ? 'nav-link-active' : 'd-none' }}"></span>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link white fontw-5 margin-x-15 pb-1" href="kandidat.html">Candidate Profile</a>
+                    <a class="nav-link {{ (request()->is('kandidat', 'profil')) ? 'link-active' : '' }} white fontw-5 margin-x-15 pb-1" href="kandidat">Kandidat</a>
+                    <span class="{{ (request()->is('kandidat', 'profil')) ? 'nav-link-active' : 'd-none' }}"></span>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link white fontw-5 margin-x-15 pb-1" href="about.html">About</a>
+                    <a class="nav-link {{ (request()->is('informasi')) ? 'link-active' : '' }} white fontw-5 margin-x-15 pb-1" href="informasi">Tentang Voting</a>
+                    <span class="{{ (request()->is('informasi')) ? 'nav-link-active' : 'd-none' }}"></span>
                 </li>
             </ul>
             <!-- Sudah Login -->

@@ -12,13 +12,13 @@
     <!-- Page Start -->
     <div class="height-100 position-relative d-flex justify-content-between overflow-hidden">
         <div class="width-45p width-md-100p height-md-100p bottom-0 align-items-center position-relative position-md-absolute">
-            <img src="/assets/img/UI/Ilustrasi-avatar.svg" alt="" class="height-80p position-relative bottom-0 z-1 d-xs-none d-block">
-            <img src="/assets/img/UI/Background/background-login.svg" class="position-absolute height-90p start-0 bottom-0 start-xs--50p">
+            <img src="/assets/images/UI/Ilustrasi-avatar.svg" alt="" class="height-80p position-relative bottom-0 z-1 d-xs-none d-block">
+            <img src="/assets/images/UI/Background/background-login.svg" class="position-absolute height-90p start-0 bottom-0 start-xs--50p">
         </div>
         <div class="width-50p width-md-100p position-relative z-1">
             <div class="position-absolute top-50 start-50 translate-middle width-80p">
-                <h2 class="fontw-7 font-10">LOGIN</h2>
-                <h1 class="fontw-7 font-15 margin-bottom-20">YOUR ACCOUNT</h1>
+                <h1 class="fontw-7 font-15 ">Masuk</h1>
+                <p class=" font-10 margin-bottom-20">Silahkan masuk sesuai akun anda</p>
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
                     <div class="margin-bottom-10">

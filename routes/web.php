@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Pages
+Route::get('/', [PagesController::class, 'homePage'])->name('homePage');
+Route::get('kandidat', [PagesController::class, 'candidatesPage'])->name('candidatesPage');
+Route::get('informasi', [PagesController::class, 'informationPage'])->name('informationPage');
 
 Route::middleware([
     'auth:sanctum',
