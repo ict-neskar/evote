@@ -13,7 +13,7 @@
     <div class="margin-x-45 margin-md-x-20 margin-xs-x-10 margin-top-80 position-relative">
         <div class="margin-x-10 bg-white rounded-4 shadow-md-extra-bottom position-relative overflow-hidden">
             <div class="bg-gray width-100p overflow-hidden position-relative" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
-                <img src="/assets/images/kandidat-1-banner.jpg" alt="" class="width-100p">
+                <img src="/assets/images/UI/Background/background-profile.svg" alt="" class="width-100p">
     
                 <!-- Default -->
                 <!-- <img src="/assets/images/UI/Background/background-profile.svg" alt="" class="position-absolute end-0 bottom-0 opacity-25"> -->

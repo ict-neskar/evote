@@ -22,7 +22,7 @@ use App\Http\Controllers\AdminCandidateController;
 // AdminPages
 Route::get('admin', [AdminController::class, 'index'])->name('adminDashboard')->middleware(['auth', 'is-admin']);
 
-Route::resource('/admin/user', UserController::class);
+Route::resource('/admin/user', UserController::class)->middleware(['auth', 'is-admin']);
 Route::get('/admin/kandidat/slug', [UserController::class, 'slug'])->middleware(['auth', 'is-admin']);
 
 

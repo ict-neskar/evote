@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Candidate;
+use App\Models\ClassRoom;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
@@ -55,8 +56,8 @@ class AdminCandidateController extends Controller
     public function edit(Candidate $candidate)
     {
         return view('pages.admin.candidates.edit', [
-            'candidate'          => $candidate
-            // 'categories'    => Category::all()
+            'candidate'          => $candidate,
+            'classes'    => ClassRoom::all()
         ]);
     }
 
@@ -68,7 +69,7 @@ class AdminCandidateController extends Controller
             'image' => 'required|image|file|max:1024',
             'video' => 'required',
             'name' => 'required|max:255',
-            // 'category_id'   => 'required|numeric',
+            'category_id'   => 'required|numeric',
             'deskripsi'   => 'required',
             'visi'   => 'required',
             'misi'   => 'required',

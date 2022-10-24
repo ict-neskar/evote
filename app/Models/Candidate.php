@@ -16,4 +16,10 @@ class Candidate extends Model
         return 'slug';
     }
 
+    public function class()
+    {
+        return $this->belongsTo(ClassRoom::class, 'class_id', 'id');
+    }
+
+
 }

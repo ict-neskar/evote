@@ -24,7 +24,7 @@ return new class extends Migration
             $table->text('visi');
             $table->text('misi');
             $table->integer("votes")->default(0);
-            // $table->integer("class_id");
+            $table->integer("class_id");
             $table->timestamps();
         });
     }

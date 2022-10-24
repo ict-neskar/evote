@@ -24,7 +24,7 @@
             </div>
             
             <h2 class="fontw-7 text-center">Terimakasih {{ Auth::user()->name }} !</h2>
-            <h5 class="fontw-6 text-center margin-bottom-15">Dari kelas XII RPL 2</h5>
+            <h5 class="fontw-6 text-center margin-bottom-15">Dari kelas {{ Auth::user()->class->kelas }} {{ Auth::user()->class->jurusans }} {{ Auth::user()->class->rombel }} </h5>
             <p class="text-center width-35 width-md-70p width-xs-100p mx-auto">Dengan memilih, anda sudah melaksanakan Pemilihan Calon Ketua OSIS
                 SMKN 1 Karawang tahun 2022/2023
             </p>
@@ -34,7 +34,7 @@
 
     <!-- Button Back -->
     <div class="position-fixed bottom-025 bottom-sm-5 bottom-xs-15 d-flex justify-content-center width-100p z-2 button-vote">        
-        <a href="index.html" class="btn-red fontw-7 font-10 rounded-pill shadow-md">Back</a>
+        <a href="/" class="btn-red fontw-7 font-10 rounded-pill shadow-md">Back</a>
     </div>
     
 @endsection

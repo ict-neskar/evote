@@ -21,7 +21,7 @@ class AkunSeeder extends Seeder
             'name' => 'admin',
             'password' => bcrypt('password'),
             'is_admin' => 1,
-            // 'class_id' => 1
+            'class_id' => 1
         ]);
 
         User::create([
@@ -29,7 +29,7 @@ class AkunSeeder extends Seeder
             'name' => 'Fariz Ferdiano',
             'password' => bcrypt('password'),
             'is_admin' => 0,
-            // 'class_id' => 2
+            'class_id' => 2
 
         ]);
 
@@ -38,7 +38,7 @@ class AkunSeeder extends Seeder
             'name' => 'Shafwana',
             'password' => bcrypt('password'),
             'is_admin' => 0,
-            // 'class_id' => 3
+            'class_id' => 3
 
         ]);
 
@@ -47,7 +47,7 @@ class AkunSeeder extends Seeder
             'name' => 'Padli',
             'password' => bcrypt('password'),
             'is_admin' => 0,
-            // 'class_id' => 4
+            'class_id' => 4
 
         ]);
 
@@ -56,7 +56,7 @@ class AkunSeeder extends Seeder
             'name' => 'Aripin',
             'password' => bcrypt('password'),
             'is_admin' => 0,
-            // 'class_id' => 1
+            'class_id' => 1
 
         ]);
     }

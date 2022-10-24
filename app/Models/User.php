@@ -59,4 +59,10 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+    public function class()
+    {
+        return $this->belongsTo(ClassRoom::class);
+    }
+
 }
