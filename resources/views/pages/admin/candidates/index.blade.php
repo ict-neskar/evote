@@ -1,0 +1,48 @@
+@extends('layouts.admin')
+@section('title')
+    Kandidat
+@endsection
+
+@section('content')
+    <div class="page-heading">
+        <h3>Menampilkan data kandidat</h3>
+        <a href="/admin/kandidat/create" class="btn icon icon-left btn-primary me-0 me-sm-3 mb-1 mb-sm-0">
+            <i class="bi bi-person-plus-fill me-2"></i>Tambah Kandidat
+        </a>
+    </div>
+    <div class="page-content">
+        <div class="row">
+            <div class="col-4">
+                @foreach($candidates as $candidate)
+                <div class="card">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center margin-bottom-10">
+                            <div class="avatar avatar-xl">
+                                <img src="/assets/images/faces/1.jpg" alt="Face 1">
+                            </div>
+                            <div class="ms-3 name">
+                                <h5 class="font-bold">{{ $candidate->name }}</h5>
+                                <h6 class="text-muted mb-0">58 | Rekayasa Perangkat Lunak - 2</h6>
+                            </div>
+                        </div>
+                        <p>
+                            {{ $candidate->deskripsi }}
+                        </p>
+                        <a href="/admin/kandidat/{{ $candidate->slug }}/edit" class="btn icon icon-left btn-primary w-100 mb-2">
+                            <i class="bi bi-person-plus-fill me-2"></i>Edit
+                        </a>
+                        <button data-bs-toggle="modal" data-bs-target="#confirmationDeleteCandidate" class="btn icon icon-left btn-danger w-100">
+                            <i class="me-2 bi bi-trash-fill"></i>Delete
+                        </button>
+                        <form action="/admin/kandidat/{{ $candidate->slug }}" class="btn icon icon-left btn-danger w-100" method="post">
+                            @method('DELETE')
+                            @csrf
+                            <button onclick="return confirm('Are you sure to delete this post?')" class="text-red-600 hover:text-red-900">Delete</button>
+                        </form>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </div>                
+    </div>
+@endsection

@@ -1,7 +1,9 @@
 <?php
 
-use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\AdminCandidateController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,14 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+// AdminPages
+Route::get('admin', [AdminController::class, 'index'])->name('adminDashboard')->middleware(['auth', 'is-admin']);
+
+// AdminPagesCandidate
+Route::get('/admin/kandidat/slug', [AdminCandidateController::class, 'slug'])->middleware(['auth', 'is-admin']);
+Route::resource('/admin/kandidat', AdminCandidateController::class)->middleware(['auth', 'is-admin']);
+
 
 // Pages
 Route::get('/', [PagesController::class, 'homePage'])->name('homePage');

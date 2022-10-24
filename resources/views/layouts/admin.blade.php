@@ -1,29 +1,34 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>E - Vote | Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    @stack('prepend-style')
-    @include('includes.styles')
-
+    <title>E - Vote | @yield('title')</title>
+    
+    <link href="/assets/images/UI/Icon/logo-icon-white.svg" rel="shortcut icon" />
+    <link rel="stylesheet" href="/assets/css/main/app.css">
+    <link rel="stylesheet" href="/assets/css/main/app-dark.css">
+    <link rel="shortcut icon" href="/assets/images/logo/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/logo/favicon.png" type="image/png">
+    
+    <link rel="stylesheet" href="/assets/css/shared/iconly.css">
+    <link rel="stylesheet" href="/assets/extensions/chart.js/Chart.min.css">
+    <link rel="stylesheet" href="/assets/extensions/quill/quill.snow.css">
+    <link rel="stylesheet" href="/assets/extensions/quill/quill.bubble.css">
+    <link rel="stylesheet" href="/assets/extensions/simple-datatables/style.css">
+    <link rel="stylesheet" href="/assets/css/pages/simple-datatables.css">
 </head>
 
 <body>
     <div id="app">
         <div id="sidebar" class="active">
             <div class="sidebar-wrapper active">
-                <!-- Mark Page -->
-                <script>
-                    const page = "dashboard";
-                </script>
-                
                 <div class="sidebar-header position-relative">
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="logo">
-                            <a href="index.html"><img src="/assets/images/logo/logo-evote.png" alt="Logo" srcset=""></a>
+                            <a href="/admin"><img src="/assets/images/logo/logo-evote.png" alt="Logo" srcset=""></a>
                         </div>
                         <div class="theme-toggle d-flex gap-2  align-items-center mt-2">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--system-uicons" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 21 21"><g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M10.5 14.5c2.219 0 4-1.763 4-3.982a4.003 4.003 0 0 0-4-4.018c-2.219 0-4 1.781-4 4c0 2.219 1.781 4 4 4zM4.136 4.136L5.55 5.55m9.9 9.9l1.414 1.414M1.5 10.5h2m14 0h2M4.135 16.863L5.55 15.45m9.899-9.9l1.414-1.415M10.5 19.5v-2m0-14v-2" opacity=".3"></path><g transform="translate(-210 -1)"><path d="M220.5 2.5v2m6.5.5l-1.5 1.5"></path><circle cx="220.5" cy="11.5" r="4"></circle><path d="m214 5l1.5 1.5m5 14v-2m6.5-.5l-1.5-1.5M214 18l1.5-1.5m-4-5h2m14 0h2"></path></g></g></svg>
@@ -40,59 +45,41 @@
                 </div>
                 <div class="sidebar-menu">
                     <ul class="menu">
-                        <li class="sidebar-title">Menu</li>
-                        
-                        <li class="sidebar-item ">
-                            <a href="/sc/index.html" class='sidebar-link'>
-                                <i class="bi bi-house-door-fill"></i>
+                        <li class="sidebar-item">
+                            <a href="/" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
                                 <span>Home</span>
                             </a>
                         </li>
-
-                        <li class="sidebar-item active">
-                            <a href="index.html" class='sidebar-link'>
+                        
+                        <li class="sidebar-item {{ (request()->is('admin')) ? 'active' : '' }}">
+                            <a href="/admin" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
                                 <span>Dashboard</span>
                             </a>
                         </li>
 
-                        <li class="sidebar-item ">
-                            <a href="candidates.html" class='sidebar-link'>
-                                <i class="bi bi-person-heart"></i>
-                                <span>Candidates</span>
-                            </a>
-                        </li>
+                        <li class="sidebar-title">Menu</li>
                 
-                        <li class="sidebar-item ">
-                            <a href="show-users.html" class='sidebar-link'>
-                                <i class="bi bi-people-fill"></i>
-                                <span>Users</span>
+
+                        <li class="sidebar-item {{ (request()->is('admin/kandidat', 'admin/kandidat/tambah', 'admin/kandidat/edit')) ? 'active' : '' }}">
+                            <a href="/admin/kandidat" class='sidebar-link'>
+                                <i class="bi bi-person-heart"></i>
+                                <span>Kandidat</span>
                             </a>
                         </li>
 
-                        <li class="sidebar-item ">
-                            <a href="setvote.html" class='sidebar-link'>
-                                <i class="bi bi-clock-fill"></i>
-                                <span>Set Vote</span>
+                        <li class="sidebar-item {{ (request()->is('admin/siswa', 'admin/tambah')) ? 'active' : '' }}">
+                            <a href="/admin/siswa" class='sidebar-link'>
+                                <i class="bi bi-people-fill"></i>
+                                <span>Siswa</span>
                             </a>
-                        </li>
-                        
-                        <li class="sidebar-item  has-sub">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-tv-fill"></i>
-                                <span>UI Set</span>
-                            </a>
-                            <ul class="submenu ">
-                                <li class="submenu-item ">
-                                    <a href="they-say.html">Quotes</a>
-                                </li>
-                            </ul>
-                        </li>
-                
+                        </li>                
                     </ul>
                 </div>
             </div>
         </div>
+
         <div id="main">
             <header class="mb-3">
                 <a href="#" class="burger-btn d-block d-xl-none">
@@ -115,9 +102,18 @@
             </footer>
         </div>
     </div>
+<script src="/assets/js/bootstrap.js"></script>
+<script src="/assets/js/app.js"></script>
+<script src="/assets/extensions/chart.js/Chart.min.js"></script>
+<script src="/assets/js/pages/ui-chartjs.js"></script>
+<script src="/assets/extensions/quill/quill.min.js"></script>
+<script src="/assets/js/pages/quill.js"></script>
+<script src="/assets/extensions/simple-datatables/umd/simple-datatables.js"></script>
+<script src="/assets/js/pages/simple-datatables.js"></script>
 
-    @stack('addon-script')
-    @include('includes.scripts')
+<!-- Need: Apexcharts -->
+<script src="/assets/extensions/apexcharts/apexcharts.min.js"></script>
+<script src="/assets/js/pages/dashboard.js"></script>
 
 </body>
 

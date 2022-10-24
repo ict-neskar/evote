@@ -27,7 +27,7 @@
                             <span class="input-group-text bg-white border-0">
                                 <iconify-icon inline icon="bx:user" style="color: #6d6d6d;"></iconify-icon>
                             </span>
-                            <input required type="text" name="nis" class="form-control border-0" id="username">
+                            <input required type="text" name="nis" class="form-control border-0" id="nis">
                         </div>
                     </div>
                     <div class="margin-bottom-20">

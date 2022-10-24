@@ -28,14 +28,15 @@
                     <div class="width-50p width-md-100p padding-md-x-10 padding-x-15 padding-y-50 padding-xs-y-15">
                         <h2 class="fontw-7 font-10">LOGIN</h2>
                         <h1 class="fontw-7 font-15 margin-bottom-20">YOUR ACCOUNT</h1>
-                        <form action="" method="">
+                        <form action="{{ route('login') }}" method="POST">
+                            {{ csrf_field() }}
                             <div class="margin-bottom-10">
-                                <label for="username" class="form-label fontw-6">Username</label>
+                                <label for="nis" class="form-label fontw-6">NIS</label>
                                 <div class="input-group border-bottom">
                                     <span class="input-group-text bg-white border-0">
                                         <iconify-icon inline icon="bx:user" style="color: #6d6d6d;"></iconify-icon>
                                     </span>
-                                    <input required type="text" class="form-control border-0" id="username">
+                                    <input required type="text" name="nis" class="form-control border-0" id="nis">
                                 </div>
                             </div>
                             <div class="margin-bottom-20">
@@ -44,7 +45,7 @@
                                     <span class="input-group-text bg-white border-0">
                                         <iconify-icon inline icon="uil:padlock" style="color: #6d6d6d;"></iconify-icon>
                                     </span>
-                                    <input required type="password" class="form-control border-0" id="password">
+                                    <input required type="password" name="password" class="form-control border-0" id="password">
                                     <span class="input-group-text bg-white border-0 " id="togglePassword">
                                         <iconify-icon inline icon="bi:eye" style="color: #6d6d6d;" id="iconTogglePassword">
                                         </iconify-icon>

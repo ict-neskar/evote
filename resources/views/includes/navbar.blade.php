@@ -22,13 +22,24 @@
                     <span class="{{ (request()->is('informasi')) ? 'nav-link-active' : 'd-none' }}"></span>
                 </li>
             </ul>
-            <!-- Sudah Login -->
-            <!-- <a href="" class="btn-white rounded-pill fontw-5 shadow-md margin-start-md-0 margin-start-10">Logout</a> -->
+            @if (auth()->id())
+                @if (Auth::user()->is_admin)
+                    <a href="admin" class="btn-white rounded-pill fontw-5 shadow-md margin-start-md-0 margin-start-10">Dashboard</a>
+                @endif
+                <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+                        <a class="btn-white rounded-pill fontw-5 shadow-md margin-start-md-0 margin-start-10" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                    this.closest('form').submit(); " role="button">
+                            <i class="fas fa-sign-out-alt"></i>
 
-            <!-- Belum Login -->
-            <button type="button" class="btn-white rounded-pill fontw-5 shadow-md margin-start-md-0 margin-start-10" data-bs-toggle="modal" data-bs-target="#ModalLogin">
-                Login
-            </button>  
+                            {{ __('Log Out') }}
+                        </a>
+                    </form>
+            @else
+                <button type="button" class="btn-white rounded-pill fontw-5 shadow-md margin-start-md-0 margin-start-10" data-bs-toggle="modal" data-bs-target="#ModalLogin">
+                    Login
+                </button>  
+        @endif
         </div>
     </div>
 </nav>
