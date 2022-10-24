@@ -5,6 +5,11 @@
 
 @section('content')
     <div class="page-heading">
+        @if(session('success'))
+        <div class="bg-white shadow-sm p-5 border-l-4 border-green-500 mb-5">
+            <span class="font-medium text-green-500 text-base">{{ session('success') }}</span>
+        </div>
+        @endif
         <h3>Menampilkan data kandidat</h3>
         <a href="/admin/kandidat/create" class="btn icon icon-left btn-primary me-0 me-sm-3 mb-1 mb-sm-0">
             <i class="bi bi-person-plus-fill me-2"></i>Tambah Kandidat
@@ -12,8 +17,8 @@
     </div>
     <div class="page-content">
         <div class="row">
+            @foreach($candidates as $candidate)
             <div class="col-4">
-                @foreach($candidates as $candidate)
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex align-items-center margin-bottom-10">
@@ -31,18 +36,15 @@
                         <a href="/admin/kandidat/{{ $candidate->slug }}/edit" class="btn icon icon-left btn-primary w-100 mb-2">
                             <i class="bi bi-person-plus-fill me-2"></i>Edit
                         </a>
-                        <button data-bs-toggle="modal" data-bs-target="#confirmationDeleteCandidate" class="btn icon icon-left btn-danger w-100">
-                            <i class="me-2 bi bi-trash-fill"></i>Delete
-                        </button>
-                        <form action="/admin/kandidat/{{ $candidate->slug }}" class="btn icon icon-left btn-danger w-100" method="post">
+                        <form action="/admin/kandidat/{{ $candidate->id }}" class="btn icon icon-left btn-danger w-100" method="post">
                             @method('DELETE')
                             @csrf
-                            <button onclick="return confirm('Are you sure to delete this post?')" class="text-red-600 hover:text-red-900">Delete</button>
+                            <button type="submit">Delete</button>
                         </form>
                     </div>
                 </div>
-                @endforeach
             </div>
+            @endforeach
         </div>                
     </div>
 @endsection

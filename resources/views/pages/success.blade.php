@@ -23,7 +23,7 @@
                 </span>
             </div>
             
-            <h2 class="fontw-7 text-center">Terimakasih Muhammad Padli !</h2>
+            <h2 class="fontw-7 text-center">Terimakasih {{ Auth::user()->name }} !</h2>
             <h5 class="fontw-6 text-center margin-bottom-15">Dari kelas XII RPL 2</h5>
             <p class="text-center width-35 width-md-70p width-xs-100p mx-auto">Dengan memilih, anda sudah melaksanakan Pemilihan Calon Ketua OSIS
                 SMKN 1 Karawang tahun 2022/2023

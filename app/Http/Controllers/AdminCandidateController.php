@@ -96,9 +96,9 @@ class AdminCandidateController extends Controller
 
     public function destroy(Candidate $candidate)
     {
-        // if ($candidate->banner) Storage::delete($candidate->banner);
         if ($candidate->image) Storage::delete($candidate->image);
         $candidate->delete();
+
         return redirect()->to('/admin/kandidat')->with('success', 'Data kandidat berhasil di hapus.');
     }
 

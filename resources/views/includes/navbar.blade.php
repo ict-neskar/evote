@@ -14,11 +14,11 @@
                     <span class="{{ (request()->is('/')) ? 'nav-link-active' : 'd-none' }}"></span>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ (request()->is('kandidat', 'profil')) ? 'link-active' : '' }} white fontw-5 margin-x-15 pb-1" href="kandidat">Kandidat</a>
+                    <a class="nav-link {{ (request()->is('kandidat', 'profil')) ? 'link-active' : '' }} white fontw-5 margin-x-15 pb-1" href="/kandidat">Kandidat</a>
                     <span class="{{ (request()->is('kandidat', 'profil')) ? 'nav-link-active' : 'd-none' }}"></span>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ (request()->is('informasi')) ? 'link-active' : '' }} white fontw-5 margin-x-15 pb-1" href="informasi">Tentang Voting</a>
+                    <a class="nav-link {{ (request()->is('informasi')) ? 'link-active' : '' }} white fontw-5 margin-x-15 pb-1" href="/informasi">Tentang Voting</a>
                     <span class="{{ (request()->is('informasi')) ? 'nav-link-active' : 'd-none' }}"></span>
                 </li>
             </ul>
