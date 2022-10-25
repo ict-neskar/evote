@@ -21,7 +21,7 @@ class AdminCandidateController extends Controller
     public function create()
     {
         return view('pages.admin.candidates.create', [
-            // 'categories'    => Category::all()
+            'classes'    => ClassRoom::all()
         ]);
     }
 
@@ -33,10 +33,11 @@ class AdminCandidateController extends Controller
             'image' => 'required|image|file|max:1024',
             'video' => 'required',
             'name' => 'required|max:255',
-            // 'category_id'   => 'required|numeric',
+            'class_id'   => 'required|numeric',
             'deskripsi'   => 'required',
             'visi'   => 'required',
-            'misi'   => 'required'
+            'misi'   => 'required',
+            'program'   => 'required'
         ]);
 
         // $validatedData['banner'] = $request->file('image')->store('candidates-images');
@@ -56,7 +57,7 @@ class AdminCandidateController extends Controller
     public function edit(Candidate $candidate)
     {
         return view('pages.admin.candidates.edit', [
-            'candidate'          => $candidate,
+            'candidate'   => $candidate,
             'classes'    => ClassRoom::all()
         ]);
     }
@@ -69,10 +70,11 @@ class AdminCandidateController extends Controller
             'image' => 'required|image|file|max:1024',
             'video' => 'required',
             'name' => 'required|max:255',
-            'category_id'   => 'required|numeric',
+            'class_id'   => 'required|numeric',
             'deskripsi'   => 'required',
             'visi'   => 'required',
             'misi'   => 'required',
+            'program'   => 'required',
             'votes' => 'required'
         ];
 

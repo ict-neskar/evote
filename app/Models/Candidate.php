@@ -9,7 +9,7 @@ class Candidate extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'slug', 'video', 'deskripsi', 'visi', 'misi', 'image'];
+    protected $fillable = ['name', 'slug', 'video', 'deskripsi', 'visi', 'misi', 'program', 'image', 'class_id'];
     
     public function getRouteKeyName()
     {
