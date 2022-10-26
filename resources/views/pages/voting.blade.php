@@ -18,7 +18,7 @@
             <div class="rounded-4 width-100p bg-red d-flex justify-content-center position-relative padding-y-15 overflow-hidden">
                 <img src="/assets/images/UI/Background/background-voting.svg" class="position-absolute width-75p top-0 end-0" alt="" srcset="">
                 <div class="position-relative text-center margin-top-15">
-                    <img src="/assets/images/kandidat-1-profile.png" alt="" class="width-90p">
+                    <img src="{{ asset('storage/' . $candidate->image) }}" alt="" class="width-90p">
                     @if (auth()->id())
                     <div class="d-flex justify-content-center position-absolute bottom-0 w-100 padding-x-25">
                         <button data-bs-toggle="modal" data-bs-target="#modalVote{{ $candidate->id }}"

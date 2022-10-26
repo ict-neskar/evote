@@ -46,7 +46,7 @@ class UserController extends Controller
         
         User::create($validatedData);
 
-        return redirect()->route('/admin/user/')->with('success','Berhasil membuat user.');
+        return redirect()->to('/admin/user/')->with('success','Berhasil membuat user.');
     }
 
     /**
@@ -92,6 +92,6 @@ class UserController extends Controller
     public function destroy(User $user)
     {
         $user->delete();
-        return redirect()->route('/admin/user')->with('success','User berhasil dihapus');
+        return redirect()->to('/admin/user')->with('success','User berhasil dihapus');
     }
 }

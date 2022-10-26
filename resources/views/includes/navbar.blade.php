@@ -1,7 +1,7 @@
 <!-- Navbar -->
 <nav class="navbar navbar-dark navbar-expand-lg bg-red rounded-4 margin-top-125 margin-top-md-10 margin-xs-top-05 margin-x-45 margin-xs-10 top-4 fixed-top shadow-md">
     <div class="container-fluid padding-x-40 padding-md-x-15 padding-y-05">
-        <a class="navbar-brand margin-end-40 margin-xs-end-00" href="index.html">
+        <a class="navbar-brand margin-end-40 margin-xs-end-00" href="/">
             <img src="/assets/images/UI/Icon/logo-white.svg" alt="E-Vote" class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

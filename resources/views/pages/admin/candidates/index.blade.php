@@ -32,13 +32,12 @@
                         </div>
                         <p>
                         </p>
-                        <a href="/admin/kandidat/{{ $candidate->slug }}/edit" class="btn icon icon-left btn-primary w-100 mb-2">
-                            <i class="bi bi-person-plus-fill me-2"></i>Edit
-                        </a>
-                        <form action="/admin/kandidat/{{ $candidate->id }}" class="btn icon icon-left btn-danger w-100" method="post">
-                            @method('DELETE')
+                        <form method="post" action="{{ route('kandidat.destroy', $candidate->id) }}">
                             @csrf
-                            <button type="submit">Delete</button>
+                            @method('DELETE')
+                            {{-- <a href="{{ route('students.show', $row->id) }}" class="btn btn-primary btn-sm">View</a>
+                            <a href="{{ route('students.edit', $row->id) }}" class="btn btn-warning btn-sm">Edit</a> --}}
+                            <input type="submit" class="btn btn-danger btn-sm" value="Delete" />
                         </form>
                     </div>
                 </div>

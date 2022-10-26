@@ -27,7 +27,9 @@
                             <tr>
                                 <th>NIS</th>
                                 <th>Name</th>
-                                {{-- <th>Kelas</th> --}}
+                                <th>Kelas</th>
+                                <th>Jurusan</th>
+                                <th>Rombel</th>
                                 <th>Status</th>
                                 <th>Action</th>
                             </tr>
@@ -37,7 +39,9 @@
                             <tr>
                                 <td>{{ $user->nis }}</td>
                                 <td>{{ $user->name }}</td>
-                                {{-- <td>XI TKJ 3</td> --}}
+                                <td>{{ $user->class->kelas }}</td>
+                                <td>{{ $user->class->jurusans }}</td>
+                                <td>{{ $user->class->rombel }}</td>
                                 @if ($user->has_voted)
                                 <td>
                                     <span class="badge bg-success">Voted</span>

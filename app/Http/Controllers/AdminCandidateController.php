@@ -57,7 +57,7 @@ class AdminCandidateController extends Controller
     public function edit(Candidate $candidate)
     {
         return view('pages.admin.candidates.edit', [
-            'candidate'   => $candidate,
+        $candidate = Candidate::orderBy('id','desc')->get(),
             'classes'    => ClassRoom::all()
         ]);
     }
@@ -99,8 +99,17 @@ class AdminCandidateController extends Controller
 
     public function destroy(Candidate $candidate)
     {
-        if ($candidate->image) Storage::delete($candidate->image);
+        // if ($candidate->image) {
+        //     Storage::delete($candidate->image);
+        // }
+        // $candidate->delete();
+
+        // $candidate = Candidate::findOrFail($id);
+
+        Storage::delete("{{ $candidate->image }}");
         $candidate->delete();
+
+     
 
         return redirect()->to('/admin/kandidat')->with('success', 'Data kandidat berhasil di hapus.');
     }

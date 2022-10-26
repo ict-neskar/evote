@@ -22,7 +22,7 @@
                                     </div>
                                     <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                                         <h6 class="text-muted font-semibold">Total Students</h6>
-                                        <h6 class="font-extrabold mb-0">112.000</h6>
+                                        <h6 class="font-extrabold mb-0">{{ $jumlah_user }}</h6>
                                     </div>
                                 </div>
                             </div>
@@ -39,7 +39,7 @@
                                     </div>
                                     <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                                         <h6 class="text-muted font-semibold">Has Voted</h6>
-                                        <h6 class="font-extrabold mb-0">183.000</h6>
+                                        <h6 class="font-extrabold mb-0">{{ $jumlah_voted }}</h6>
                                     </div>
                                 </div>
                             </div>
@@ -56,7 +56,7 @@
                                     </div>
                                     <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                                         <h6 class="text-muted font-semibold">Not Yet Voted</h6>
-                                        <h6 class="font-extrabold mb-0">112</h6>
+                                        <h6 class="font-extrabold mb-0">{{ $jumlah_notvoted }}</h6>
                                     </div>
                                 </div>
                             </div>
@@ -70,8 +70,8 @@
                                         <img src="/assets/images/faces/1.jpg" alt="Face 1">
                                     </div>
                                     <div class="ms-3 name">
-                                        <h5 class="font-bold">Padli Septiana</h5>
-                                        <h6 class="text-muted mb-0">@septianpadli</h6>
+                                        <h5 class="font-bold">{{ Auth::user()->name }}</h5>
+                                        <h6 class="text-muted mb-0">@ {{ Auth::user()->name }}</h6>
                                     </div>
                                 </div>
                                 <div class="text-end mt-3">

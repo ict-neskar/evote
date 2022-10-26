@@ -38,19 +38,19 @@
     </div>
     <div class="row gx-5 margin-x-45 margin-xs-10 overflow-hidden position-relative">
         <div class="col-12 col-md-4 margin-md-bottom-35 margin-bottom-0" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
-            <img src="/assets/images/image_visi.jpg" class="width-100p rounded-4 margin-bottom-50 margin-md-bottom-20"
+            <img src="/assets/images/ilus-1.png" class="width-100p rounded-4 margin-bottom-50 margin-md-bottom-20"
                 alt="Masukkan Akun">
             <h4 class="fw-bold">Masukkan Akun</h4>
             <p class="width-100p">Sebelum kamu mulai voting, masuk dulu ke akunmu</p>
         </div>
         <div class="col-12 col-md-4 margin-md-bottom-35 margin-bottom-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-            <img src="/assets/images/image_visi.jpg" class="width-100p rounded-4 margin-bottom-50 margin-md-bottom-20"
+            <img src="/assets/images/ilus-2.png" class="width-100p rounded-4 margin-bottom-50 margin-md-bottom-20"
                 alt="Baca Informasi">
             <h4 class="fw-bold">Baca Informasi</h4>
             <p class="width-100p">Cermati setiap kandidat biar kamu ga salah pilih</p>
         </div>
         <div class="col-12 col-md-4 margin-md-bottom-35 margin-bottom-0" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
-            <img src="/assets/images/image_visi.jpg" class="width-100p rounded-4 margin-bottom-50 margin-md-bottom-20"
+            <img src="/assets/images/ilus-3.png" class="width-100p rounded-4 margin-bottom-50 margin-md-bottom-20"
                 alt="Pilih Kandidat">
             <h4 class="fw-bold">Pilih Kandidat</h4>
             <p class="width-100p">Jika kamu sudah menentukan pilihanmu, selanjutnya kamu bisa vote di halaman profil kandidat</p>
