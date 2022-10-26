@@ -48,10 +48,12 @@
                                 </td>
                                 @endif
                                 <td class="d-flex flex-row">
-                                    <form action="/admin/user/{{ $user->name }}" method="Post">
+                                    <form method="post" action="{{ route('user.destroy', $user->id) }}">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="btn btn-danger">Delete</button>
+                                        {{-- <a href="{{ route('students.show', $row->id) }}" class="btn btn-primary btn-sm">View</a>
+                                        <a href="{{ route('students.edit', $row->id) }}" class="btn btn-warning btn-sm">Edit</a> --}}
+                                        <input type="submit" class="btn btn-danger btn-sm" value="Delete" />
                                     </form>
                                 </td>
                             </tr>

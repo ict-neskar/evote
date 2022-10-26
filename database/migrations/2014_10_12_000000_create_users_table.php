@@ -21,7 +21,7 @@ return new class extends Migration
             $table->boolean('has_voted')->default(0);
             $table->integer('candidate_voted')->default(0);
             $table->boolean('is_admin')->default(0);
-            $table->foreignId('class_id');
+            $table->integer('class_id');
             $table->rememberToken();
             $table->timestamps();
         });

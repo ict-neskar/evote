@@ -23,15 +23,14 @@
                     <div class="card-body">
                         <div class="d-flex align-items-center margin-bottom-10">
                             <div class="avatar avatar-xl">
-                                <img src="/assets/images/faces/1.jpg" alt="Face 1">
+                                <img src="{{ asset('storage/' . $candidate->image) }}" alt="Face 1">
                             </div>
                             <div class="ms-3 name">
                                 <h5 class="font-bold">{{ $candidate->name }}</h5>
-                                <h6 class="text-muted mb-0">58 | Rekayasa Perangkat Lunak - 2</h6>
+                                <h6 class="text-muted mb-0">{{ $candidate->class->kelas }} {{ $candidate->class->jurusanl }} {{ $candidate->class->rombel }}</h6>
                             </div>
                         </div>
                         <p>
-                            {{ $candidate->deskripsi }}
                         </p>
                         <a href="/admin/kandidat/{{ $candidate->slug }}/edit" class="btn icon icon-left btn-primary w-100 mb-2">
                             <i class="bi bi-person-plus-fill me-2"></i>Edit

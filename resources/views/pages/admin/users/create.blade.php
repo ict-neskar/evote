@@ -6,7 +6,7 @@
 @section('content')
     <div class="page-heading">
         <h3>Add Candidates</h3>
-        <a href="admin/user" class="btn icon icon-left btn-primary">
+        <a href="/admin/user" class="btn icon icon-left btn-primary">
             <i class="bi bi-arrow-90deg-left me-2"></i>Show User
         </a>
     </div>
@@ -53,6 +53,11 @@
                         </div>
                     </div> --}}
                     <div class="row">
+                        <div class="col-12 col-sm-6">
+                            <label for="class_id">ID kelas</label>
+                            <input type="text" name="class_id" class="form-control" id="class_id" placeholder="Masukan id kelas" value="{{ old('name') }}">
+                            @error('class_id')<small class="text-red-600 font-medium block my-2">{{ $message }}</small>@enderror
+                        </div>
                         <div class="col-12 col-sm-6">
                             <label for="password">Password</label>
                             <div class="input-group">

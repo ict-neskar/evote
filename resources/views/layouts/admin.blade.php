@@ -72,7 +72,7 @@
                         <li class="sidebar-title">Menu</li>
                 
 
-                        <li class="sidebar-item {{ (request()->is('admin/kandidat', 'admin/kandidat/tambah', 'admin/kandidat/edit')) ? 'active' : '' }}">
+                        <li class="sidebar-item {{ (request()->is('admin/kandidat', 'admin/kandidat/create', 'admin/kandidat/edit')) ? 'active' : '' }}">
                             <a href="/admin/kandidat" class='sidebar-link'>
                                 <i class="bi bi-person-heart"></i>
                                 <span>Kandidat</span>

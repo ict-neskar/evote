@@ -37,13 +37,14 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        $validatedData = $request->validate([
             'name' => 'required',
             'nis' => 'required',
+            'class_id' => 'required',
             'password' => 'required',
         ]);
         
-        User::create($request->post());
+        User::create($validatedData);
 
         return redirect()->route('/admin/user/')->with('success','Berhasil membuat user.');
     }

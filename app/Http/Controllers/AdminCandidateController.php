@@ -29,8 +29,8 @@ class AdminCandidateController extends Controller
     {
         $validatedData = $request->validate([
             'slug'   => 'required',
-            // 'banner' => 'required|image|file|max:1024',
-            'image' => 'required|image|file|max:1024',
+            // 'banner' => 'required|image|file|max:5024',
+            'image' => 'required|image|file|max:5024',
             'video' => 'required',
             'name' => 'required|max:255',
             'class_id'   => 'required|numeric',
@@ -66,8 +66,8 @@ class AdminCandidateController extends Controller
     {
         $rules = [
             'slug'   => 'required',
-            // 'banner' => 'required|image|file|max:1024',
-            'image' => 'required|image|file|max:1024',
+            // 'banner' => 'required|image|file|max:5024',
+            'image' => 'required|image|file|max:5024',
             'video' => 'required',
             'name' => 'required|max:255',
             'class_id'   => 'required|numeric',
