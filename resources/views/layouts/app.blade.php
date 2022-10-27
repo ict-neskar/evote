@@ -19,13 +19,13 @@
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content overflow-hidden rounded-4 padding-x-md-10">
                 <div class="modal-body height-70 height-xs-50 position-relative d-flex">
-                    <button type="button" class="btn-close position-absolute top-1 top-md-025 end-1 end-md-025"
+                    <button type="button" class="btn-close position-absolute top-1 top-md-025 end-1 end-md-025 z-3"
                         data-bs-dismiss="modal" aria-label="Close"></button>
                     <div class="width-50p d-none d-md-flex align-items-center position-relative">
                         <img src="/assets/images/UI/Ilustrasi-avatar.svg" alt="" class="height-80p position-relative z-1">
                         <img src="/assets/images/UI/Background/background-login.svg" class="img-bgilustration-login">
                     </div>
-                    <div class="width-50p width-md-100p padding-md-x-10 padding-x-15 padding-y-50 padding-xs-y-15">
+                    <div class="width-50p width-md-100p padding-md-x-10 padding-x-15 padding-y-50 padding-xs-y-15 position-relative z-2">
                         <h2 class="fontw-7 font-10">LOGIN</h2>
                         <h1 class="fontw-7 font-15 margin-bottom-20">YOUR ACCOUNT</h1>
                         <form action="{{ route('login') }}" method="POST">

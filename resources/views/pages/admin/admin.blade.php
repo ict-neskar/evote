@@ -88,20 +88,6 @@
                         </div>
                     </div>                            
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <!-- Voted Candidates -->
-                            <!-- Chart menampilkan hasil suara setiap kandidat -->
-                            <div class="card-header">
-                                <h4 class="card-title">Voted Candidates</h4>
-                            </div>
-                            <div class="card-body">
-                                <canvas id="bar"></canvas>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
     </div>

@@ -14,7 +14,11 @@ class VotingController extends Controller
         if(!Auth::check())
         {
             return redirect('login');
-        }elseif (now() > date('2022-11-03 00:00:00')) {
+        }elseif (now() < date('2022-10-31 07:00:00')){
+            return view('pages.notstarted');
+
+        }
+        elseif (now() > date('2022-11-03 00:00:00')) {
             return view('pages.golput');
         }
         elseif(!Auth::user()->has_voted)
@@ -37,6 +41,9 @@ class VotingController extends Controller
 
     public function peringatanPage(){
         return view('pages.hasvoted');
+    }
+    public function peringatan2Page(){
+        return view('pages.notstarted');
     }
 
     public function chooseVoting(Request $request)
