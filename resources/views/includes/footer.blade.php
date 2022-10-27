@@ -19,27 +19,27 @@
         class="width-40p width-md-70p width-xs-90p mx-auto text-center text-md-start d-md-flex d-none flex-column flex-md-row margin-md-y-30">
         <div class="d-flex flex-column margin-end-60 margin-md-end-00">
             <h3 class="margin-bottom-20">Menu</h3>
-            <a class="margin-bottom-125" href="index.html">Home</a>
-            <a class="margin-bottom-125" href="kandidat.html">Profil Kandidat</a>
+            <a class="margin-bottom-125" href="/">Home</a>
+            <a class="margin-bottom-125" href="/kandidat">Profil Kandidat</a>
         </div>
         <div class="d-flex flex-column">
             <h3 class="margin-bottom-20">Information</h3>
-            <a class="margin-bottom-125" href="about.html">About Us</a>
+            <a class="margin-bottom-125" href="/informasi">About Us</a>
             <a class="margin-bottom-125" href="">FAQ</a>
             <a class="margin-bottom-125" href="">Contact Us</a>
         </div>
     </div>
     <div class="width-md-70p width-xs-90p mx-auto text-center text-md-start">
         <h3 class="margin-bottom-20">Ikuti Kami</h3>
-        <a href="" class="white fontw-7 font-20 font-xs-15 position-relative square-icon rounded-pill">
+        <a href="https://www.instagram.com/neskar_official/" class="white fontw-7 font-20 font-xs-15 position-relative square-icon rounded-pill">
             <iconify-icon icon="akar-icons:instagram-fill"
                 class="red position-absolute top-50 start-50 translate-middle"></iconify-icon>
         </a>
-        <a href="" class="white fontw-7 font-20 font-xs-15 position-relative square-icon margin-x-20 rounded-pill">
+        <a href="https://twitter.com/smkn1karawang" class="white fontw-7 font-20 font-xs-15 position-relative square-icon margin-x-20 rounded-pill">
             <iconify-icon icon="simple-line-icons:social-twitter"
                 class="red position-absolute top-50 start-50 translate-middle"></iconify-icon>
         </a>
-        <a href="" class="white fontw-7 font-20 font-xs-15 position-relative square-icon rounded-pill">
+        <a href="https://www.facebook.com/neskarofficial/" class="white fontw-7 font-20 font-xs-15 position-relative square-icon rounded-pill">
             <iconify-icon icon="bxl:facebook" class="red position-absolute top-50 start-50 translate-middle">
             </iconify-icon>
         </a>
