@@ -13,8 +13,8 @@
     <div class="margin-x-45 margin-md-x-20 margin-xs-x-10 margin-top-80 position-relative">
         <div class="margin-x-10 bg-white rounded-4 shadow-md-extra-bottom position-relative overflow-hidden">
             <div class="bg-gray width-100p overflow-hidden position-relative" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
-                <img src="/assets/images/UI/Background/background-profile.svg" alt="" class="width-100p">
-    
+                <img src="/assets/images/UI/Background/background-profile.png" alt="" class="width-100p">
+
                 <!-- Default -->
                 <!-- <img src="/assets/images/UI/Background/background-profile.svg" alt="" class="position-absolute end-0 bottom-0 opacity-25"> -->
             </div>
@@ -25,7 +25,7 @@
                 <h2 class="text-center fontw-9">{{ $candidate->name }}</h2>
                 <p class="text-center fontw-6"> {{ $candidate->class->jurusanl }}</p>
             </div>
-    
+
             <!-- Visi -->
             <div class="margin-x-40 margin-md-x-30 margin-xs-x-15 justify-content-between margin-bottom-40 d-flex flex-md-row flex-column-reverse">
                 <div class="width-55p width-md-100p flex-column" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Program -->
             <div class="d-inline-block margin-x-40 margin-md-x-30 margin-xs-x-15 margin-bottom-30 margin-md-bottom-20">
                 <h2 class="fontw-7 mb-1">Program</h2>
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 
     <!-- Button Vote -->
     <div class="position-fixed bottom-5 bottom-sm-10 bottom-xs-15 d-flex justify-content-center width-100p z-2 button-vote">
@@ -69,5 +69,5 @@
 
     <!-- Dont Delete -->
     <div class="width-100p height-20"></div>
-    
+
 @endsection

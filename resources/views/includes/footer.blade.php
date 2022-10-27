@@ -25,8 +25,7 @@
         <div class="d-flex flex-column">
             <h3 class="margin-bottom-20">Information</h3>
             <a class="margin-bottom-125" href="/informasi">About Us</a>
-            <a class="margin-bottom-125" href="">FAQ</a>
-            <a class="margin-bottom-125" href="">Contact Us</a>
+            <a class="margin-bottom-125" href="mailto:pejuangdaring.dev@gmail.com">Contact Us</a>
         </div>
     </div>
     <div class="width-md-70p width-xs-90p mx-auto text-center text-md-start">
