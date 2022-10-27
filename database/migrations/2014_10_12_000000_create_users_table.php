@@ -20,10 +20,11 @@ return new class extends Migration
             $table->string('password');
             $table->boolean('has_voted')->default(0);
             $table->integer('candidate_voted')->default(0);
-            $table->boolean('is_admin')->default(0);
             $table->integer('class_id');
+            // $table->foreign('class_id')->references('id')->on('class');
             $table->rememberToken();
             $table->timestamps();
+            $table->boolean('is_admin')->default(0);
         });
     }
 

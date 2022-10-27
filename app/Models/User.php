@@ -26,10 +26,11 @@ class User extends Authenticatable
     protected $fillable = [
         'nis',
         'name',
-        'email',
         'class_id',
         'password',
     ];
+
+    protected $primaryKey = 'id';
 
     /**
      * The attributes that should be hidden for serialization.

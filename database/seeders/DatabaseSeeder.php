@@ -24,7 +24,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Candidate::factory(3)->create();
         $this->call([
             AkunSeeder::class,
-            KelasSeeder::class,
+            // KelasSeeder::class,
             // KandidatSeeder::class,
             
         ]);

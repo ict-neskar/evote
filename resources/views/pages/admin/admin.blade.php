@@ -75,7 +75,14 @@
                                     </div>
                                 </div>
                                 <div class="text-end mt-3">
-                                    <a href="#" class="btn icon icon-left btn-sm btn-danger rounded-pill px-3"><i class="bi bi-box-arrow-up-right me-2"></i>Logout</a>
+                                    <form method="POST" action="{{ route('logout') }}">
+                                        @csrf
+                                        <a class="btn-danger rounded-pill fontw-5 shadow-md margin-start-md-0 margin-start-10" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                                    this.closest('form').submit(); " role="button">
+                                            <i class="fas fa-sign-out-alt"></i>
+                                            Logout
+                                        </a>
+                                    </form>                
                                 </div>
                             </div>
                         </div>
@@ -83,83 +90,6 @@
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <div class="card">
-                            <!-- Voters Department -->
-                            <!-- Jumlah voters dari setiap jurusan -->
-                            <div class="card-header">
-                                <h4>Voters Department</h4>
-                            </div>
-                            <div class="card-body">
-                                <div id="chart-profile-visit"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-xl-5">
-                        <div class="card">
-                            <div class="card-header">
-                                <h4>Voters Generation</h4>
-                            </div>
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="d-flex align-items-center">
-                                            <svg class="bi text-primary" width="32" height="32" fill="white"
-                                                style="width:10px">
-                                                <use
-                                                    xlink:href="/assets/images/bootstrap-icons.svg#circle-fill" />
-                                            </svg>
-                                            <h5 class="mb-0 ms-3">Gen '57</h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <h5 class="mb-0">862</h5>
-                                    </div>
-                                    <div class="col-12">
-                                        <div id="chart-europe"></div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="d-flex align-items-center">
-                                            <svg class="bi text-success" width="32" height="32" fill="white"
-                                                style="width:10px">
-                                                <use
-                                                    xlink:href="/assets/images/bootstrap-icons.svg#circle-fill" />
-                                            </svg>
-                                            <h5 class="mb-0 ms-3">Gen '58</h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <h5 class="mb-0">375</h5>
-                                    </div>
-                                    <div class="col-12">
-                                        <div id="chart-america"></div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-6">
-                                        <div class="d-flex align-items-center">
-                                            <svg class="bi text-danger" width="32" height="32" fill="white"
-                                                style="width:10px">
-                                                <use
-                                                    xlink:href="/assets/images/bootstrap-icons.svg#circle-fill" />
-                                            </svg>
-                                            <h5 class="mb-0 ms-3">Gen '59</h5>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <h5 class="mb-0">625</h5>
-                                    </div>
-                                    <div class="col-12">
-                                        <div id="chart-indonesia"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-xl-7">
                         <div class="card">
                             <!-- Voted Candidates -->
                             <!-- Chart menampilkan hasil suara setiap kandidat -->
@@ -177,3 +107,7 @@
     </div>
 
 @endsection
+
+@push('addon')
+    
+@endpush

@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Candidate extends Model
 {
     use HasFactory;
+    protected $primaryKey = 'id';
+
 
     protected $fillable = ['name', 'slug', 'video', 'deskripsi', 'visi', 'misi', 'program', 'image', 'class_id'];
     

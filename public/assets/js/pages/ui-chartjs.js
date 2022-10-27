@@ -290,18 +290,12 @@ var ctxBar = document.getElementById("bar").getContext("2d");
 var myBar = new Chart(ctxBar, {
     type: 'bar',
     data: {
-        labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul"],
+        labels: ["{{ $candidates->name }}",],
         datasets: [{
             label: 'Students',
             backgroundColor: [chartColors.grey, chartColors.grey, chartColors.grey, chartColors.grey, chartColors.info, chartColors.blue, chartColors.grey],
             data: [
                 5,
-                10,
-                30,
-                40,
-                35,
-                55,
-                15,
             ]
         }]
     },

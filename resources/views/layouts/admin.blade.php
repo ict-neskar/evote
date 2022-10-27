@@ -19,6 +19,8 @@
     <link rel="stylesheet" href="/assets/extensions/quill/quill.bubble.css">
     <link rel="stylesheet" href="/assets/extensions/simple-datatables/style.css">
     <link rel="stylesheet" href="/assets/css/pages/simple-datatables.css">
+    
+    @stack('addon')
 
     <script src="https://cdn.tiny.cloud/1/2cj4v0itcxtk8lrl33mvg8hjzuf5idqobtehi3vyo2fpdln5/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
     <script type="text/javascript">

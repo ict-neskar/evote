@@ -41,7 +41,7 @@
                                 <td>{{ $user->name }}</td>
                                 <td>{{ $user->class->kelas }}</td>
                                 <td>{{ $user->class->jurusans }}</td>
-                                <td>{{ $user->class->rombel }}</td>
+                                <td>{{ $user->class->rombel }}</td>                                    
                                 @if ($user->has_voted)
                                 <td>
                                     <span class="badge bg-success">Voted</span>

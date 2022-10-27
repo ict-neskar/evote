@@ -9,6 +9,8 @@ class ClassRoom extends Model
 {
     use HasFactory;
     protected $table = 'class';
+    protected $primaryKey = 'id';
+
 
     public function users()
     {
