@@ -54,7 +54,8 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://localhost'),
+    // 'url' => 'https://e-vote.smkn1karawang.sch.id/',
 
     'asset_url' => env('ASSET_URL'),
 

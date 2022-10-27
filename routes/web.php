@@ -1,3 +1,5 @@
+
+
 <?php
 
 use Illuminate\Support\Facades\Route;
@@ -7,6 +9,14 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\VotingController;
 use App\Http\Controllers\CandidateController;
 use App\Http\Controllers\AdminCandidateController;
+
+$app_url = config("app.url");
+if (app()->environment('prod') && !empty($app_url)) {
+    URL::forceRootUrl($app_url);
+    $schema = explode(':', $app_url)[0];
+    URL::forceScheme($schema);
+}
+
 
 /*
 |--------------------------------------------------------------------------
