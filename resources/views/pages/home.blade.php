@@ -10,9 +10,13 @@
             <h1 class="font-35 fontw-9 margin-bottom-10">Selamat Datang Di Website E-Vote</h1>
             <h2 class="font-15 font-md-125 fontw-7">Mudahkan Pemilihan Bersama Kami</h2>
         </div>
+        @if (auth()->id())
+            <a href="/kandidat" class="btn-white rounded-pill fontw-6 font-125 shadow-md width-xs-100p d-inline-block" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">Mulai Vote Sekarang</a>
+        @else
         <button data-bs-toggle="modal" data-bs-target="#ModalLogin" class="btn-white rounded-pill fontw-6 font-125 shadow-md width-xs-100p d-inline-block" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
             Mulai Vote Sekarang
         </button>
+        @endif
         <div class="position-absolute bottom-0 end-10 height-90 height-md-45 d-md-block d-none position-relative">
             <img src="/assets/images/UI/ilustrasi-kotaksuara.svg" class="kotaksuara" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
         </div>
