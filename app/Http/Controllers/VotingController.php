@@ -14,7 +14,8 @@ class VotingController extends Controller
         if(!Auth::check())
         {
             return redirect('login');
-        }elseif (now() < date('2022-10-31 07:00:00')){
+        }
+        elseif (now() < date('2022-10-27 07:00:00')){
             return view('pages.notstarted');
 
         }

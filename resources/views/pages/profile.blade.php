@@ -23,7 +23,7 @@
             </div>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
                 <h2 class="text-center fontw-9">{{ $candidate->name }}</h2>
-                <p class="text-center fontw-6">Rekayasa Perangkat Lunak</p>
+                <p class="text-center fontw-6"> {{ $candidate->class->jurusanl }}</p>
             </div>
     
             <!-- Visi -->
