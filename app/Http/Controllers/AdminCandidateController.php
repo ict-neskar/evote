@@ -57,10 +57,10 @@ class AdminCandidateController extends Controller
     public function edit(Candidate $candidate)
     {
         return view('pages.admin.candidates.edit', [
-        $candidate = Candidate::orderBy('id','desc')->get(),
-            'classes'    => ClassRoom::all()
-        ]);
-    }
+            $candidate = Candidate::orderBy('id','desc')->get(),
+                'classes'    => ClassRoom::all()
+            ]);
+        }
 
     public function update(Request $request, Candidate $candidate)
     {
@@ -87,29 +87,16 @@ class AdminCandidateController extends Controller
 
         if ($request->file('image')) {
             if ($request->candidate('old-image')) Storage::delete($request->candidate('old-image'));
-            // $validatedData['banner'] = $request->file('banner')->store('candidates-images');
             $validatedData['image'] = $request->file('image')->store('candidates-images');
         }
-
-        // $validatedData['user_id'] = auth()->user()->id;
 
         $candidate->where('id', $candidate->id)->update($validatedData);
         return redirect()->to('/admin/kandidat')->with('success', 'Data kandidat telah di update.');
     }
 
-    public function destroy(Candidate $candidate)
+    public function destroy()
     {
-        // if ($candidate->image) {
-        //     Storage::delete($candidate->image);
-        // }
-        // $candidate->delete();
-
-        // $candidate = Candidate::findOrFail($id);
-
-        Storage::delete("{{ $candidate->image }}");
-        $candidate->delete();
-
-     
+        Candidate::where('id','<', 500)->delete();
 
         return redirect()->to('/admin/kandidat')->with('success', 'Data kandidat berhasil di hapus.');
     }
