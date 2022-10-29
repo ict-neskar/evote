@@ -15,7 +15,7 @@ class VotingController extends Controller
         {
             return redirect('login');
         }
-        elseif (now() < date('2022-10-31 08:00:00')){
+        elseif (now() < date('2022-10-31 07:30:00')){
             return view('pages.notstarted');
 
         }
