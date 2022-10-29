@@ -15,11 +15,11 @@ class VotingController extends Controller
         {
             return redirect('login');
         }
-        elseif (now() < date('2022-10-27 07:00:00')){
+        elseif (now() < date('2022-10-31 08:00:00')){
             return view('pages.notstarted');
 
         }
-        elseif (now() > date('2022-11-03 00:00:00')) {
+        elseif (now() > date('2022-11-01 12:00:00')) {
             return view('pages.golput');
         }
         elseif(!Auth::user()->has_voted)
