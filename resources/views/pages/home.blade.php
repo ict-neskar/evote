@@ -76,7 +76,7 @@
                         <div class="swiper-slide bg-red rounded-4 white padding-x-15 padding-sm-x-00 padding-top-20 padding-sm-top-00 padding-bottom-15 position-relative overflow-hidden">
                             <img src="/assets/images/_Abah_amung.png" alt="" class="position-absolute position-sm-sticky z-0 top-0 end-0 width-100p">
                             <span class="position-relative z-2 fontw-9 font-15 d-block padding-x-00 padding-sm-x-15 margin-bottom-00">"</span>
-                            <p class="position-relative z-2 width-65p width-sm-90p fontw-4 font-10 font-xs-075 margin-bottom-125 padding-x-00 padding-sm-x-15 ms-2"> Assalamualaikum warahmatullahi wabarakatuh, alhamdulillah kita bisa melakukan pemilihan ketua OSIS dengan sistem e-vote yg ke 7, mudah mudahan ketua OSIS yang terpilih bisa melanjutkan program OSIS dengan lebih baik lagi karena OSIS adalah garda terdepan dalam membantu setiap kegiatan sekolah.
+                            <p class="position-relative z-2 width-65p width-sm-90p fontw-4 font-10 font-xs-075 margin-bottom-125 padding-x-00 padding-sm-x-15 ms-2"> Alhamdulillah kita bisa melakukan pemilihan ketua OSIS dengan sistem e-vote yg ke 7, mudah mudahan ketua OSIS yang terpilih bisa melanjutkan program OSIS dengan lebih baik lagi karena OSIS adalah garda terdepan dalam membantu setiap kegiatan sekolah.
                                 <span class="fontw-9 font-15 ms-2">"</span>
                             </p>
                             <p class="position-relative z-2 fontw-7 mb-0 padding-x-00 padding-sm-x-15 ms-2">Drs. Makmur, M.T.</p>
