@@ -54,7 +54,7 @@
                             </div> --}}
                                 </div>
                                 <div class="col-4 col-sm-3">
-                                    <img src="/assets/images/kandidat-1-profile.png"
+                                    <img src="{{ asset('storage/' . $candidate->image) }}"
                                         class="img-thumbnail rounded-circle border border-danger shadow-md"
                                         alt="{{ $candidate->name }}">
                                 </div>
