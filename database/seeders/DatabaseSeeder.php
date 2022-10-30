@@ -21,12 +21,12 @@ class DatabaseSeeder extends Seeder
         //     'email' => 'test@example.com',
         // ]);
 
-        \App\Models\Candidate::factory(3)->create();
+        // \App\Models\Candidate::factory(3)->create();
         $this->call([
-            AkunSeeder::class,
+            // AkunSeeder::class,
             // KelasSeeder::class,
-            // KandidatSeeder::class,
-            
+            KandidatSeeder::class,
+
         ]);
 
 

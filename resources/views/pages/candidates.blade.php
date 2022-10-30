@@ -21,7 +21,7 @@
                 <img src="/assets/images/UI/Background/background-2.svg" alt="" class="height-85p height-md-80p height-xs-70p">
             </div>
         </div>
-    
+
         <!-- Statistik -->
         <div class="w-100 margin-bottom-40 margin-top-15 position-relative">
             @if ($candidates->count())
@@ -53,14 +53,14 @@
                 </div>
                 @endforeach
             </div>
-        </div>      
+        </div>
         @else
         <div class="text-center">
             <p>Kandidat tidak tersedia</p>
         </div>
         @endif
-    
-    
+
+
 
     <!-- Kandidat -->
     @if ($candidates->count())
@@ -68,8 +68,8 @@
         @foreach ($candidates as $candidate)
         <div class="mx-auto width-85p width-md-75p rounded-4 shadow-md d-flex flex-column-reverse flex-md-row-reverse-even margin-bottom-25" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
             <div class="width-60p width-md-100p padding-x-15 padding-top-25 padding-bottom-50 padding-md-bottom-25">
-                <h1 class="fontw-9 font-40 font-md-30">{{ $candidate->name }}</h1>
-                <h3 class="fontw-5 margin-top-10 margin-bottom-15"> {{ $candidate->class->kelas }} {{ $candidate->class->jurusans }} {{ $candidate->class->rombel }} </h3>
+                <h1 class="fontw-9 font-25 font-md-20">{{ $candidate->name }}</h1>
+                <h4 class="fontw-5 margin-top-10 margin-bottom-15"> {{ $candidate->class->kelas }} {{ $candidate->class->jurusans }} {{ $candidate->class->rombel }} </h4>
                 <div class="width-100p margin-bottom-30">
                     <p class="fontw-7">{!! $candidate->deskripsi !!}</p>
                 </div>
@@ -81,7 +81,7 @@
                     <div class="position-absolute width-100p ratio ratio-1x1 top-50 start-50 translate-middle bg-gray rounded-circle"></div>
                 </div>
             </div>
-        </div>            
+        </div>
         @endforeach
     </div>
     @else

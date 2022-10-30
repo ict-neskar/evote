@@ -42,7 +42,7 @@
         <div class="modal fade" id="modalVote{{ $candidate->id }}" tabindex="-1" aria-labelledby="modalVote" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <form action="{{ route('chooseVoting') }}" method="post">
-                    @csrf     
+                    @csrf
                     <div class="modal-content overflow-hidden rounded-4 padding-x-md-10">
                         <div class="modal-body position-relative d-flex">
                             <button type="button" class="btn-close position-absolute top-1 top-md-025 end-1 end-md-025"
@@ -57,26 +57,23 @@
                                 <p class="font-10 margin-bottom-20">Apakah anda yakin ingin memilih {{ $candidate->name }} ?
                                 </p>
                                 <div class="d-flex flex-column flex-sm-row width-100p justify-content-between mx-auto mx-md-0">
-                                    
-                                    
-                                    <button class="rounded-pill btn-outline-red" data-bs-dismiss="modal" aria-label="Close">Kembali
-                                        Memilih Kandidat</button>
-                                        <button class="rounded-pill btn-red margin-xs-bottom-10 margin-bottom-00" name="candidateId" value="{{ $candidate->id }}">Ya, Saya Yakin</button>
+                                    <button class="rounded-pill btn-outline-red margin-xs-bottom-10 margin-bottom-00" data-bs-dismiss="modal" aria-label="Close">Kembali Memilih Kandidat</button>
+                                    <button class="rounded-pill btn-red" name="candidateId" value="{{ $candidate->id }}">Ya, Saya Yakin</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-        
+
                 </form>
             </div>
         </div>
         @endforeach
 
-                
+
         </div>
     </div>
 
-    
+
     <!-- Modal Selesai Vote -->
     <div class="modal fade" id="modalVoteConf" tabindex="-1" aria-labelledby="modalVoteConf" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -98,5 +95,5 @@
             </div>
         </div>
     </div>
-    
+
 @endsection
