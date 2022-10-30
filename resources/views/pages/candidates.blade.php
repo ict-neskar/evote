@@ -64,15 +64,6 @@
                     </div>
                 @endforeach
             </div>
-            <div class="width-85p mx-auto position-relative overflow-hidden">
-                <div class="d-flex justify-content-end">
-                    <a href="/kandidat" class="red d-flex align-items-center margin-top-20 width-175p" data-aos="fade-left"
-                        data-aos-duration="1000">
-                        <p class="me-2 mb-0">Lihat profil selengkapnya</p>
-                        <iconify-icon icon="bi:arrow-right"></iconify-icon>
-                    </a>
-                </div>
-            </div>
     </div>
 @else
     <div class="text-center">
