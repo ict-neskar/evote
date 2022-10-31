@@ -7,7 +7,7 @@ use App\Models\Candidate;
 
 class PagesController extends Controller
 {
-    public function homePage() {        
+    public function homePage() {
         return view('pages.home', [
             "candidates" => Candidate::all()
         ]);
@@ -19,5 +19,10 @@ class PagesController extends Controller
     }
     public function informationPage() {
         return view('pages.information');
+    }
+    public function statis() {
+        return view('pages.statis', [
+            'candidates' => Candidate::all()
+        ]);
     }
 }

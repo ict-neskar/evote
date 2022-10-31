@@ -33,6 +33,8 @@ Route::resource('/admin/kandidat', AdminCandidateController::class)->middleware(
 Route::get('/kandidat', [CandidateController::class, "index"]);
 Route::get('/kandidat/{candidate:slug}', [CandidateController::class, "show"]);
 
+Route::get('/dit-is-een-willekeurige-link-om-statistieken-te-zien-maar-alleen-voor-de-commissie-en-mag-niet-gedeeld-of-gezien-worden-door-andere-studenten', [PagesController::class, 'statis']);
+
 // Voting
 Route::get('peringatan', [VotingController::class, 'peringatanPage'])->name('peringatanPage')->middleware(['auth']);
 Route::get('golput', [VotingController::class, 'golputPage'])->name('golputPage')->middleware(['auth']);
