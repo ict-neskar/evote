@@ -16,6 +16,7 @@ class AdminController extends Controller
 
         $candidates = Candidate::all();
 
-        return view('pages.admin.admin', compact('jumlah_user', 'jumlah_voted', 'jumlah_notvoted'));
+
+        return view('pages.admin.admin', compact('jumlah_user', 'jumlah_voted', 'jumlah_notvoted', 'candidates'));
     }
 }

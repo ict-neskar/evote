@@ -91,65 +91,60 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-12">
-                        <!-- Statistik -->
-                        <div class="w-100 margin-bottom-40 margin-top-15 position-relative">
-                            @if ($candidates->count())
-                                <div class="bg-red-linear padding-y-125 padding-x-20 padding-sm-x-15 padding-xs-10 width-75p width-xl-85p width-sm-80p width-xs-90p mx-auto rounded-4 d-flex flex-column flex-lg-row justify-content-between shadow-md row gx-4"
-                                    data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
-                                    <!-- Card -->
-                                    @foreach ($candidates as $candidate)
-                                        <div class="col-12 col-md-4">
-                                            <div class="bg-white-linear rounded-4 shadow-md overflow-hidden mb-lg-0 mb-4"
-                                                style="--bs-aspect-ratio: 66%;">
-                                                <div class="bg-circles padding-125 padding-end-00 row">
-                                                    <div class="col-8 col-sm-9">
-                                                        <h1 class="fontw-9 font-15 mb-0">{{ $candidate->name }}</h1>
-                                                        <p class="red margin-bottom-10 font-xs-8">
-                                                            {{ $candidate->class->kelas }}
-                                                            {{ $candidate->class->jurusans }}
-                                                            {{ $candidate->class->rombel }}</p>
-                                                        <div
-                                                            class="position-relative d-flex align-items-top margin-bottom-075">
-                                                            <h1 class="font-40 fontw-9 red mb-0">{{ $candidate->votes }}
-                                                            </h1>
-                                                            <span class="fontw-7 font-075 red">Vote</span>
-                                                        </div>
-                                                        {{-- <div class="d-flex align-items-center">
+                <!-- Statistik -->
+                <div class="w-100 margin-bottom-40 margin-top-15 position-relative">
+                    @if ($candidates->count())
+                        <div class="bg-red-linear padding-y-125 padding-x-20 padding-sm-x-15 padding-xs-10 width-75p width-xl-85p width-sm-80p width-xs-90p mx-auto rounded-4 d-flex flex-column flex-lg-row justify-content-between shadow-md row gx-4"
+                            data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
+                            <!-- Card -->
+                            @foreach ($candidates as $candidate)
+                                <div class="col-12 col-md-4">
+                                    <div class="bg-white-linear rounded-4 shadow-md overflow-hidden mb-lg-0 mb-4"
+                                        style="--bs-aspect-ratio: 66%;">
+                                        <div class="bg-circles padding-125 padding-end-00 row">
+                                            <div class="col-8 col-sm-9">
+                                                <h1 class="fontw-9 font-15 mb-0">{{ $candidate->name }}</h1>
+                                                <p class="red margin-bottom-10 font-xs-8">
+                                                    {{ $candidate->class->kelas }}
+                                                    {{ $candidate->class->jurusans }}
+                                                    {{ $candidate->class->rombel }}</p>
+                                                <div class="position-relative d-flex align-items-top margin-bottom-075">
+                                                    <h1 class="font-40 fontw-9 red mb-0">{{ $candidate->votes }}
+                                                    </h1>
+                                                    <span class="fontw-7 font-075 red">Vote</span>
+                                                </div>
+                                                {{-- <div class="d-flex align-items-center">
                                 <iconify-icon icon="akar-icons:clock" class="grey me-1"></iconify-icon>
                                 <p class="mb-0 grey font-06 d-inline-block">
                                     Terakhir update 1 jam yang lalu
                                 </p>
                             </div> --}}
-                                                    </div>
-                                                    <div class="col-4 col-sm-3">
-                                                        <img src="{{ asset('storage/' . $candidate->image) }}"
-                                                            class="img-thumbnail rounded-circle border border-danger shadow-md"
-                                                            alt="{{ $candidate->name }}">
-                                                    </div>
-                                                </div>
+                                            </div>
+                                            <div class="col-4 col-sm-3">
+                                                <img src="{{ asset('storage/' . $candidate->image) }}"
+                                                    class="img-thumbnail rounded-circle border border-danger shadow-md"
+                                                    alt="{{ $candidate->name }}">
                                             </div>
                                         </div>
-                                    @endforeach
-                                </div>
-                                <div class="width-85p mx-auto position-relative overflow-hidden">
-                                    <div class="d-flex justify-content-end">
-                                        <a href="/kandidat" class="red d-flex align-items-center margin-top-20 width-175p"
-                                            data-aos="fade-left" data-aos-duration="1000">
-                                            <p class="me-2 mb-0">Lihat profil selengkapnya</p>
-                                            <iconify-icon icon="bi:arrow-right"></iconify-icon>
-                                        </a>
                                     </div>
                                 </div>
+                            @endforeach
                         </div>
-                    @else
-                        <div class="text-center">
-                            <p>Kandidat tidak tersedia</p>
+                        <div class="width-85p mx-auto position-relative overflow-hidden">
+                            <div class="d-flex justify-content-end">
+                                <a href="/kandidat" class="red d-flex align-items-center margin-top-20 width-175p"
+                                    data-aos="fade-left" data-aos-duration="1000">
+                                    <p class="me-2 mb-0">Lihat profil selengkapnya</p>
+                                    <iconify-icon icon="bi:arrow-right"></iconify-icon>
+                                </a>
+                            </div>
                         </div>
-                        @endif
-                    </div>
                 </div>
+            @else
+                <div class="text-center">
+                    <p>Kandidat tidak tersedia</p>
+                </div>
+                @endif
             </div>
         </section>
     </div>

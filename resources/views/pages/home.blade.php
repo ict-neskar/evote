@@ -29,7 +29,7 @@
 
     <!-- Kata Mereka SwiperJS -->
     <!-- Slider main container -->
-    <div class="margin-x-45 margin-xs-x-10">
+    <div class="margin-x-45 margin-xs-x-10 margin-top-50">
         <div class="margin-bottom-50 margin-md-bottom-25 margin-xs-bottom-15">
             <h1 class="text-center fw-bold">Pemilihan OSIS SMK Negeri 1 Karawang</h1>
             <span class="under-line"></span>
