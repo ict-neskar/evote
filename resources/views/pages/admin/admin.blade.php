@@ -91,6 +91,7 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- Statistik -->
                 <div class="w-100 margin-bottom-40 margin-top-15 position-relative">
                     @if ($candidates->count())
@@ -102,7 +103,7 @@
                                     <div class="bg-white-linear rounded-4 shadow-md overflow-hidden mb-lg-0 mb-4"
                                         style="--bs-aspect-ratio: 66%;">
                                         <div class="bg-circles padding-125 padding-end-00 row">
-                                            <div class="col-8 col-sm-9">
+                                            <div class="col-12">
                                                 <h1 class="fontw-9 font-15 mb-0">{{ $candidate->name }}</h1>
                                                 <p class="red margin-bottom-10 font-xs-8">
                                                     {{ $candidate->class->kelas }}
@@ -114,30 +115,16 @@
                                                     <span class="fontw-7 font-075 red">Vote</span>
                                                 </div>
                                                 {{-- <div class="d-flex align-items-center">
-                                <iconify-icon icon="akar-icons:clock" class="grey me-1"></iconify-icon>
-                                <p class="mb-0 grey font-06 d-inline-block">
-                                    Terakhir update 1 jam yang lalu
-                                </p>
-                            </div> --}}
-                                            </div>
-                                            <div class="col-4 col-sm-3">
-                                                <img src="{{ asset('storage/' . $candidate->image) }}"
-                                                    class="img-thumbnail rounded-circle border border-danger shadow-md"
-                                                    alt="{{ $candidate->name }}">
+                                                    <iconify-icon icon="akar-icons:clock" class="grey me-1"></iconify-icon>
+                                                    <p class="mb-0 grey font-06 d-inline-block">
+                                                        Terakhir update 1 jam yang lalu
+                                                    </p>
+                                                </div> --}}
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             @endforeach
-                        </div>
-                        <div class="width-85p mx-auto position-relative overflow-hidden">
-                            <div class="d-flex justify-content-end">
-                                <a href="/kandidat" class="red d-flex align-items-center margin-top-20 width-175p"
-                                    data-aos="fade-left" data-aos-duration="1000">
-                                    <p class="me-2 mb-0">Lihat profil selengkapnya</p>
-                                    <iconify-icon icon="bi:arrow-right"></iconify-icon>
-                                </a>
-                            </div>
                         </div>
                 </div>
             @else
