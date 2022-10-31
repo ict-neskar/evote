@@ -19,7 +19,7 @@ class VotingController extends Controller
             return view('pages.notstarted');
 
         }
-        elseif (now() > date('2022-11-01 00:00:00')) {
+        elseif (now() > date('2022-09-01 00:00:00')) {
             return view('pages.golput');
         }
         elseif(!Auth::user()->has_voted)
