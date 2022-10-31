@@ -57,7 +57,7 @@
                                 <p class="font-10 margin-bottom-20">Apakah anda yakin ingin memilih {{ $candidate->name }} ?
                                 </p>
                                 <div class="d-flex flex-column flex-sm-row width-100p justify-content-between mx-auto mx-md-0">
-                                    <button class="rounded-pill btn-outline-red margin-xs-bottom-10 margin-bottom-00" data-bs-dismiss="modal" aria-label="Close">Kembali Memilih Kandidat</button>
+                                    {{-- <button class="rounded-pill btn-outline-red margin-xs-bottom-10 margin-bottom-00" data-bs-dismiss="modal" aria-label="Close">Kembali Memilih Kandidat</button> --}}
                                     <button class="rounded-pill btn-red" name="candidateId" value="{{ $candidate->id }}">Ya, Saya Yakin</button>
                                 </div>
                             </div>
