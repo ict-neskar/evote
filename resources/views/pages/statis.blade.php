@@ -62,34 +62,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-3 col-sm-6">
-                        <div class="card">
-                            <div class="card-body py-4 px-4">
-                                <div class="d-flex align-items-center">
-                                    <div class="avatar avatar-xl">
-                                        <img src="/assets/images/faces/1.jpg" alt="Face 1">
-                                    </div>
-                                    <div class="ms-3 name">
-                                        <h5 class="font-bold">{{ Auth::user()->name }}</h5>
-                                        <h6 class="text-muted mb-0">@ {{ Auth::user()->name }}</h6>
-                                    </div>
-                                </div>
-                                <div class="text-end mt-3">
-                                    <form method="POST" action="{{ route('logout') }}">
-                                        @csrf
-                                        <a class="btn-danger rounded-pill fontw-5 shadow-md margin-start-md-0 margin-start-10"
-                                            href="{{ route('logout') }}"
-                                            onclick="event.preventDefault();
-                                                    this.closest('form').submit(); "
-                                            role="button">
-                                            <i class="fas fa-sign-out-alt"></i>
-                                            Logout
-                                        </a>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Statistik -->
