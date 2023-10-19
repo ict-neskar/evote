@@ -98,6 +98,7 @@
                         <div class="bg-red-linear padding-y-125 padding-x-20 padding-sm-x-15 padding-xs-10 width-75p width-xl-85p width-sm-80p width-xs-90p mx-auto rounded-4 d-flex flex-column flex-lg-row justify-content-between shadow-md row gx-4"
                             data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
                             <!-- Card -->
+
                             @foreach ($candidates as $candidate)
                                 <div class="col-12 col-md-4">
                                     <div class="bg-white-linear rounded-4 shadow-md overflow-hidden mb-lg-0 mb-4"

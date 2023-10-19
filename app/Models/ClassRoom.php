@@ -11,6 +11,10 @@ class ClassRoom extends Model
     protected $table = 'class';
     protected $primaryKey = 'id';
 
+    protected $fillable = [
+        'jurusan',
+        'kelas', ];
+
 
     public function users()
     {

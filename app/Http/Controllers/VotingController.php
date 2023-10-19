@@ -11,18 +11,7 @@ class VotingController extends Controller
 {
     public function votingPage()
     {
-        if(!Auth::check())
-        {
-            return redirect('login');
-        }
-        elseif (now() < date('2022-10-30 00:00:00')){
-            return view('pages.notstarted');
-
-        }
-        elseif (now() > date('2022-09-01 00:00:00')) {
-            return view('pages.golput');
-        }
-        elseif(!Auth::user()->has_voted)
+        if(!Auth::user()->has_voted)
         {
             $candidates = DB::table('candidates')->get();
             return view('pages.voting', ['candidates' => $candidates]);
