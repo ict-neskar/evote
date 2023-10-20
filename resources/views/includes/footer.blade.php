@@ -1,5 +1,5 @@
 <!-- Footer -->
-<div class="d-flex flex-column flex-md-row justify-content-between bg-red padding-x-40 padding-md-x-15 padding-top-40 padding-xs-top-35 padding-bottom-25 white"
+<div class="d-flex flex-column flex-md-row justify-content-between bg-primary padding-x-40 padding-md-x-15 padding-top-40 padding-xs-top-35 padding-bottom-25 white"
     id="footer">
     <div class="width-30p width-md-70p width-xs-90p mx-auto me-md-10 text-center text-md-start">
         <div class="">
@@ -28,26 +28,11 @@
             <a class="margin-bottom-125" href="mailto:pejuangdaring.dev@gmail.com">Contact Us</a>
         </div>
     </div>
-    <div class="width-md-70p width-xs-90p mx-auto text-center text-md-start">
-        <h3 class="margin-bottom-20">Ikuti Kami</h3>
-        <a href="https://www.instagram.com/neskar_official/" class="white fontw-7 font-20 font-xs-15 position-relative square-icon rounded-pill">
-            <iconify-icon icon="akar-icons:instagram-fill"
-                class="red position-absolute top-50 start-50 translate-middle"></iconify-icon>
-        </a>
-        <a href="https://twitter.com/smkn1karawang" class="white fontw-7 font-20 font-xs-15 position-relative square-icon margin-x-20 rounded-pill">
-            <iconify-icon icon="simple-line-icons:social-twitter"
-                class="red position-absolute top-50 start-50 translate-middle"></iconify-icon>
-        </a>
-        <a href="https://www.facebook.com/neskarofficial/" class="white fontw-7 font-20 font-xs-15 position-relative square-icon rounded-pill">
-            <iconify-icon icon="bxl:facebook" class="red position-absolute top-50 start-50 translate-middle">
-            </iconify-icon>
-        </a>
-    </div>
 </div>
 
 <!-- Copyright Mobile -->
 <div
-    class="d-flex align-items-center justify-content-center fontw-7 bg-red white pt-2 padding-bottom-20 d-flex d-md-none">
+    class="d-flex align-items-center justify-content-center fontw-7 bg-primary white pt-2 padding-bottom-20 d-flex d-md-none">
     <iconify-icon icon="fa-regular:copyright" class=""></iconify-icon>
     <p class="mb-0 ms-2">Copyright 2022 Pejuang Daring</p>
 </div>

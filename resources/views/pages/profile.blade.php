@@ -19,7 +19,7 @@
                 <!-- Default -->
                 {{-- <img src="/assets/images/UI/Background/background-profile.svg" alt="" class="width-100p"> --}}
             </div>
-            <div class="width-075 width-md-10 width-xs-15 rounded-circle overflow-hidden ratio ratio-1x1 border border-danger border-3 mx-auto position-relative bottom-0375 bottom-md-5 bottom-xs-075 bg-light"
+            <div class="width-075 width-md-10 width-xs-15 rounded-circle overflow-hidden ratio ratio-1x1 border border-primary border-3 mx-auto position-relative bottom-0375 bottom-md-5 bottom-xs-075 bg-light"
                 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                 <img src="{{ asset('storage/' . $candidate->image) }}" alt="" class="height-100p">
             </div>
@@ -71,7 +71,7 @@
     <!-- Button Vote -->
     <div class="position-fixed bottom-5 bottom-sm-10 bottom-xs-15 d-flex justify-content-center width-100p z-2 button-vote">
         <a href="/kandidat" class="btn btn-light fontw-7 font-10 rounded-pill shadow-md me-3">Kembali</a>
-        <a href="/voting" class="btn-red fontw-7 font-10 rounded-pill shadow-md">Vote</a>
+        <a href="/voting" class="btn btn-primary fontw-7 font-10 rounded-pill shadow-md">Vote</a>
     </div>
 
     <!-- Dont Delete -->

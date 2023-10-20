@@ -1,5 +1,5 @@
 <!-- Navbar -->
-<nav class="navbar navbar-dark navbar-expand-lg bg-red rounded-4 margin-top-125 margin-top-md-10 margin-xs-top-05 margin-x-45 margin-xs-10 top-4 fixed-top shadow-md">
+<nav class="navbar navbar-dark navbar-expand-lg bg-primary rounded-4 margin-top-125 margin-top-md-10 margin-xs-top-05 margin-x-45 margin-xs-10 top-4 fixed-top shadow-md">
     <div class="container-fluid padding-x-40 padding-md-x-15 padding-y-05">
         <a class="navbar-brand margin-end-40 margin-xs-end-00" href="/">
             <img src="/assets/images/UI/Icon/logo-white.svg" alt="E-Vote" class="d-inline-block align-text-top">
@@ -36,7 +36,7 @@
                         </a>
                     </form>
             @else
-                <button type="button" class="btn-white rounded-pill fontw-5 shadow-md margin-start-md-0 margin-start-10" data-bs-toggle="modal" data-bs-target="#ModalLogin">
+                <button type="button" class="btn btn-light text-primary rounded-pill fontw-5 shadow-md margin-start-md-0 margin-start-10" data-bs-toggle="modal" data-bs-target="#ModalLogin">
                     Login
                 </button>  
         @endif

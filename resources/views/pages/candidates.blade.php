@@ -9,7 +9,7 @@
     </script>
 
     <!-- Header -->
-    <div class="w-100 height-100 bg-red padding-top-75 position-relative margin-bottom-40 position-relative overflow-hidden">
+    <div class="w-100 height-100 bg-primary padding-top-75 position-relative margin-bottom-40 position-relative overflow-hidden">
         <div class="position-relative z-1" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">
             <h1
                 class="fontw-9 font-40 font-xs-325 font-sm-25 white text-center margin-bottom-05 margin-xs-top-90 margin-md-top-15">
@@ -41,7 +41,7 @@
                             <p class="fontw-7">{!! $candidate->deskripsi !!}</p>
                         </div>
                         <a href="/kandidat/{{ $candidate->slug }}"
-                            class="btn-red rounded-pill fontw-7 px-4 py-2 font-10 font-xs-075 mx-auto width-md-100p d-md-inline-block text-md-center">Lihat
+                            class="btn btn-primary rounded-pill fontw-7 px-4 py-2 font-10 font-xs-075 mx-auto width-md-100p d-md-inline-block text-md-center">Lihat
                             Profil Selengkapnya</a>
                     </div>
                     <div class="width-40p width-md-75p margin-top-25 d-flex justify-content-center align-items-end mx-auto">

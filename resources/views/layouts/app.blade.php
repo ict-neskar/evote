@@ -53,7 +53,7 @@
                                 </div>
                             </div>
                             <div class="d-flex align-items-center justify-content-end width-100p">
-                                <button type="submit" class="btn btn-danger rounded-pill padding-x-15 bg-red">Login</button>
+                                <button type="submit" class="btn btn-primary rounded-pill padding-x-15 bg-blue">Login</button>
                             </div>
                         </form>
                     </div>

@@ -13,7 +13,7 @@
     <div class="page-content">
         <section class="row mb-5">
             <div class="col-12">
-                <form action="/admin/kandidat" method="POST" novalidate enctype="multipart/form-data">
+                <form action="{{ route('kandidat.store')}}" method="POST" novalidate enctype="multipart/form-data">
                     @csrf
                     <div class="row">
                         <div class="col-12 col-sm-6">
@@ -64,10 +64,9 @@
                     <div class="card mt-3">
                         <div class="card-body">
                             <div class="form-group">
-                                {{-- <h4 class="card-title">Candidate Vissions</h4> --}}
                                 <h1>Deskripsi</h1>
                                 <div class="myeditablediv" name="deskripsi" id="deskripsi" value="{{ old('deskripsi') }}">Klik disini untuk mengedit area field ini!</div>
-                                {{-- <textarea name="visi" id="visi" cols="30" rows="5"></textarea> --}}
+                                 <textarea class="form-control" name="deskripsi" id="deskripsi" cols="30" rows="5"></textarea>
                                 @error('deskripsi')<small class="text-red-600 font-medium block my-2">{{ $message }}</small>@enderror
 
                             </div>
@@ -77,8 +76,7 @@
                         <div class="card-body">
                             <h1>Visi</h1>
                             <div class="myeditablediv" name="visi" id="visi" value="{{ old('visi') }}">Klik disini untuk mengedit area field ini!</div>
-                            {{-- <h4 class="card-title">Misi</h4>
-                            <textarea name="misi" id="misi" cols="30" rows="5"></textarea> --}}
+                            <textarea class="form-control" name="visi" id="visi" cols="30" rows="5"></textarea>
                             @error('visi')<small class="text-red-600 font-medium block my-2">{{ $message }}</small>@enderror
                         </div>
                     </div>
@@ -86,8 +84,7 @@
                         <div class="card-body">
                             <h1>Misi</h1>
                             <div class="myeditablediv" name="misi" id="misi" value="{{ old('misi') }}">Klik disini untuk mengedit area field ini!</div>
-                            {{-- <h4 class="card-title">Mssi</h4>
-                            <textarea name="misi" id="misi" cols="30" rows="5"></textarea> --}}
+                            <textarea class="form-control" name="misi" id="misi" cols="30" rows="5"></textarea>
                             @error('misi')<small class="text-red-600 font-medium block my-2">{{ $message }}</small>@enderror
                         </div>
                     </div>
@@ -95,8 +92,7 @@
                         <div class="card-body">
                             <h1>Program</h1>
                             <div class="myeditablediv" name="program" id="program" value="{{ old('program') }}">Klik disini untuk mengedit area field ini!</div>
-                            {{-- <h4 class="card-title">Mssi</h4>
-                            <textarea name="program" id="program" cols="30" rows="5"></textarea> --}}
+                            <textarea class="form-control" name="program" id="program" cols="30" rows="5"></textarea>
                             @error('program')<small class="text-red-600 font-medium block my-2">{{ $message }}</small>@enderror
                         </div>
                     </div>

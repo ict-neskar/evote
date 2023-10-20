@@ -115,6 +115,7 @@
                                                     </h1>
                                                     <span class="fontw-7 font-075 red">Vote</span>
                                                 </div>
+                                                <br>
                                                 {{-- <div class="d-flex align-items-center">
                                                     <iconify-icon icon="akar-icons:clock" class="grey me-1"></iconify-icon>
                                                     <p class="mb-0 grey font-06 d-inline-block">

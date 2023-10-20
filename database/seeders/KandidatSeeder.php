@@ -16,10 +16,10 @@ class KandidatSeeder extends Seeder
     public function run()
     {
         Candidate::create([
-            'slug' => 'reza-rusdian-prakasa',
+            'slug' => 'nayif-aditya',
             'image' => 'kandidat-1-profile.png',
-            'name' => 'Reza Rusdian Prakasa',
-            'deskripsi' => 'Halo saya Reza Rusdian Prakasa. Saya tinggi nya 180 cm. Bersekolah di SMKN 1 KARAWANG. Yang memang dari dulu sudah saya impikan. Saya orangnya mencoba bisa berguna di keluarga dan di sekolah. Saya yang mencoba untuk mengerti semua orang agar orang bisa merasakan bahwa hidup itu tidak sendirian ada teman dan sahabat yang selalu ada dan membantu jika adanya kesulitan. Saya yang mencoba agar semua orang tetap bahagia dengan lelucon lelucon saya yang kadang pun ga lucu. Mempelajari bahasa tubuh. Nada berbicara. Membaca pikiran seseorang itu sangat menyenangkan apalagi saya bisa tahu apa yang mereka sedang rasakan. Dengan semua itu saya agar semuanya bisa berteman dengan saya.',
+            'name' => 'Nayif Aditya',
+            'deskripsi' => 'Halo saya Nayif Aditya. Bersekolah di SMKN 1 KARAWANG. Yang memang dari dulu sudah saya impikan. Saya orangnya mencoba bisa berguna di keluarga dan di sekolah. Saya yang mencoba untuk mengerti semua orang agar orang bisa merasakan bahwa hidup itu tidak sendirian ada teman dan sahabat yang selalu ada dan membantu jika adanya kesulitan. Saya yang mencoba agar semua orang tetap bahagia dengan lelucon lelucon saya yang kadang pun ga lucu. Mempelajari bahasa tubuh. Nada berbicara. Membaca pikiran seseorang itu sangat menyenangkan apalagi saya bisa tahu apa yang mereka sedang rasakan. Dengan semua itu saya agar semuanya bisa berteman dengan saya.',
             'visi' => 'Menjadikan organisasi osis dinamis, fleksibel dan kreatif bersamaan solidaritas dan keharmonisan didalam organisasi yang di landasakan iman dan taqwa.',
             'misi' => 'Menanamkan pemikiran positif dan kritis kepada anggota OSIS SMKN 1 Karawang
                         Membangun karakter dan perilaku yang baik untuk anggota OSIS yang nantinya akan menjadi contoh warga sekolah SMKN 1 Karawang
