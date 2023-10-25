@@ -23,7 +23,7 @@ use App\Http\Controllers\AdminCandidateController;
 Route::get('admin', [AdminController::class, 'index'])->name('adminDashboard')->middleware(['auth', 'is-admin']);
 
 Route::resource('/admin/user', UserController::class)->middleware(['auth', 'is-admin']);
-Route::get('/admin/import-file',[UserController::class,'importView'])->name('import-view')->middleware(['auth', 'is-admin']);;
+Route::get('/admin/users/import',[UserController::class,'importView'])->name('import-view')->middleware(['auth', 'is-admin']);;
 Route::post('/admin/user/import',[UserController::class,'import'])->name('import')->middleware(['auth', 'is-admin']);;
 // Route::get('/admin/kandidat/slug', [UserController::class, 'slug'])->middleware(['auth', 'is-admin']);
 

@@ -14,12 +14,12 @@
         <div class="margin-x-10 bg-white rounded-4 shadow-md-extra-bottom position-relative overflow-hidden">
             <div class="bg-gray width-100p overflow-hidden position-relative" data-aos="fade-down" data-aos-duration="1000"
                 data-aos-delay="100">
-                <img src="/assets/images/kandidat-1-banner.png" alt="" class="width-100p">
+                <img src="/assets/images/UI/Icon/banner-evote.png" alt="" class="width-100p">
 
                 <!-- Default -->
                 {{-- <img src="/assets/images/UI/Background/background-profile.svg" alt="" class="width-100p"> --}}
             </div>
-            <div class="width-075 width-md-10 width-xs-15 rounded-circle overflow-hidden ratio ratio-1x1 border border-primary border-3 mx-auto position-relative bottom-0375 bottom-md-5 bottom-xs-075 bg-light"
+            <div class="width-075 width-md-10 width-xs-15 rounded-circle overflow-hidden ratio ratio-1x1 border border-red border-3 mx-auto position-relative bottom-0375 bottom-md-5 bottom-xs-075 bg-light"
                 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                 <img src="{{ asset('storage/' . $candidate->image) }}" alt="" class="height-100p">
             </div>
@@ -42,7 +42,7 @@
                         <p class="fontw-5">{!! $candidate->misi !!}</p>
                     </div>
                 </div>
-                <div class="width-40p width-md-100p margin-md-bottom-20 overflow-hidden" data-aos="fade-left"
+                {{-- <div class="width-40p width-md-100p margin-md-bottom-20 overflow-hidden" data-aos="fade-left"
                     data-aos-duration="1000" data-aos-delay="100">
                     <div class="ratio ratio-16x9 width-100p">
                         <!-- Link yang diganti sesudah "/embed" -->
@@ -51,7 +51,7 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                </div>
+                </div> --}}
             </div>
 
             <!-- Program -->
@@ -70,8 +70,8 @@
 
     <!-- Button Vote -->
     <div class="position-fixed bottom-5 bottom-sm-10 bottom-xs-15 d-flex justify-content-center width-100p z-2 button-vote">
-        <a href="/kandidat" class="btn btn-light fontw-7 font-10 rounded-pill shadow-md me-3">Kembali</a>
-        <a href="/voting" class="btn btn-primary fontw-7 font-10 rounded-pill shadow-md">Vote</a>
+        <a href="/kandidat" class="btn btn-light red fontw-7 font-10 rounded-pill shadow-md me-3">Kembali</a>
+        <a href="/voting" class="btn btn-red fontw-7 font-10 rounded-pill shadow-md">Vote</a>
     </div>
 
     <!-- Dont Delete -->

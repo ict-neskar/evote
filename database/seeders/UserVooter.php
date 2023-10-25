@@ -19,7 +19,7 @@ class UserVooter extends Seeder
         $csvFile = fopen(base_path("database/data/user.csv"), "r");
   
         $firstline = false;
-        while (($row = fgetcsv($csvFile, 2000, ",")) !== FALSE) {
+        while (($row = fgetcsv($csvFile, 3000, ";")) !== FALSE) {
             if (!$firstline) {
                 User::create([
                     'name' => $row['0'],

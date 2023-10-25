@@ -1,4 +1,4 @@
-<link href="/assets/images/UI/Icon/logo-icon-white.svg" rel="shortcut icon" />
+<link href="/assets/images/UI/Icon/logo-new.png" rel="shortcut icon"/>
 <link rel="stylesheet" href="/assets/css/shared/iconly.css">
 <link rel="stylesheet" href="/assets/extensions/chart.js/Chart.min.css">
 <link rel="stylesheet" href="/assets/extensions/quill/quill.snow.css">

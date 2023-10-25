@@ -59,5 +59,14 @@ class AkunSeeder extends Seeder
             'class_id' => 1
 
         ]);
+
+        User::create([
+            'nis' => '00006',
+            'name' => 'Nayif Aditya',
+            'password' => bcrypt('password'),
+            'is_admin' => 0,
+            'class_id' => 2
+
+        ]);
     }
 }

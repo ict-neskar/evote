@@ -22,8 +22,8 @@ class PagesController extends Controller
         return view('pages.information');
     }
     public function statis() {
-        $jumlah_user = User::count() - 1;
-        $jumlah_voted = User::sum('has_voted') - 1;
+        $jumlah_user = User::count();
+        $jumlah_voted = User::sum('has_voted');
         $jumlah_notvoted = $jumlah_user - $jumlah_voted;
 
         $candidates = Candidate::all();

@@ -5,18 +5,18 @@
 
 @section('content')
     <!-- Header -->
-    <div class="w-100 height-100 bg-primary padding-x-45 padding-xs-x-10 padding-top-100 position-relative bg-hero">
+    <div class="w-100 height-100 bg-red padding-x-45 padding-xs-x-10 padding-top-100 position-relative bg-hero">
         <div class="padding-md-top-40 padding-top-80 width-50p width-md-85p width-xs-100p white margin-bottom-45 margin-md-bottom-30 position-relative z-1"
             data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">
             <h1 class="font-35 fontw-9 margin-bottom-10">Selamat Datang Di Website E-Vote</h1>
             <h2 class="font-15 font-md-125 fontw-7">Mudahkan Pemilihan Bersama Kami</h2>
         </div>
         @if (auth()->id())
-            <a href="/kandidat" class="btn btn-light text-primary rounded-pill fontw-6 font-125 shadow-md width-xs-100p d-inline-block"
+            <a href="/kandidat" class="btn btn-light text-dark rounded-pill fontw-6 font-125 shadow-md width-xs-100p d-inline-block"
                 data-aos="fade-right" data-aos-duration="1000" data-aos-delay="100">Mulai Vote Sekarang</a>
         @else
             <button data-bs-toggle="modal" data-bs-target="#ModalLogin"
-                class="btn btn-light text-primary rounded-pill fontw-6 font-125 shadow-md width-xs-100p d-inline-block" data-aos="fade-right"
+                class="btn btn-light text-dark rounded-pill fontw-6 font-125 shadow-md width-xs-100p d-inline-block" data-aos="fade-right"
                 data-aos-duration="1000" data-aos-delay="100">
                 Mulai Vote Sekarang
             </button>
@@ -42,7 +42,7 @@
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div
-                            class="swiper-slide bg-primary rounded-4 white padding-x-15 padding-sm-x-00 padding-top-20 padding-sm-top-00 padding-bottom-15 position-relative overflow-hidden">
+                            class="swiper-slide bg-red rounded-4 white padding-x-15 padding-sm-x-00 padding-top-20 padding-sm-top-00 padding-bottom-15 position-relative overflow-hidden">
                             <img src="/assets/images/_Abah_amung.png" alt=""
                                 class="position-absolute position-sm-sticky z-0 top-0 end-0 height-100p">
                             <span
@@ -85,8 +85,8 @@
 
 
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-next primary fontw-9 top-10 d-none d-md-inline-block"></div>
-                <div class="swiper-button-prev primary fontw-9 top-10 d-none d-md-inline-block"></div>
+                <div class="swiper-button-next red fontw-9 top-10 d-none d-md-inline-block"></div>
+                <div class="swiper-button-prev red fontw-9 top-10 d-none d-md-inline-block"></div>
             </div>
             <!-- If we need pagination -->
             <div class="swiper-pagination pagination-red fontw-9"></div>

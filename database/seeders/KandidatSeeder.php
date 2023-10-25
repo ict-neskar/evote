@@ -25,7 +25,7 @@ class KandidatSeeder extends Seeder
                         Membangun karakter dan perilaku yang baik untuk anggota OSIS yang nantinya akan menjadi contoh warga sekolah SMKN 1 Karawang
                         Menjadikan OSIS sebagai tempat / wadah aspirasi dari warga sekolah untuk sekolah SMKN 1 Karawang
                         Membangun komunikasi dan kebersamaan yang erat antara anggota OSIS dan organisasi lainnya termasuk warga sekolah
-                        Mendorong dan mendukung semua kegiatan yang bersifat positif yang  diadakan organisasi, eskul, maupun komunitas yang ada dalam sekolah SMKN 1 Karawang
+                        Mendorong dan mendukung semua kegiatan yang bersifat positif yang diadakan organisasi, eskul, maupun komunitas yang ada dalam sekolah SMKN 1 Karawang
                         Memunculkan program - program yang bisa mengasah potensi bakat dalam siswa siswi SMKN 1 Karawang',
             'votes' => 0,
             'program' => 'Program kotak aspirasi adalah program yang membawakan tujuan untuk siswa/siswi sekolah bisa menyalurkan pendapat mereka ataupun keinginan mereka yang bersifat positif dan baik untuk sekolah maupun OSIS itu sendiri.',

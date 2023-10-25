@@ -14,7 +14,7 @@
         <a href="/admin/user/create" class="btn icon icon-left btn-primary me-0 me-sm-3 mb-1 mb-sm-0">
             <i class="bi bi-person-plus-fill me-2"></i>Tambah User
         </a>
-        <a href="/admin/user/import-file" class="btn icon icon-left btn-primary me-0 me-sm-3 mb-1 mb-sm-0">
+        <a href="/admin/users/import" class="btn icon icon-left btn-primary me-0 me-sm-3 mb-1 mb-sm-0">
             <i class="bi bi-person-plus-fill me-2"></i>Import User
         </a>
     </div>
