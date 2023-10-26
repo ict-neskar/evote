@@ -96,12 +96,12 @@ class UserController extends Controller
         return redirect()->to('/admin/user')->with('success','User berhasil dihapus');
     }
 
-    public function importView(Request $request){
-        return view('pages.admin.users.import');
-    }
+    // public function importView(Request $request){
+    //     return view('pages.admin.users.import');
+    // }
 
-    public function import(Request $request){
-        Excel::import(new Importuser, $request->file('file')->store('files'));
-        return redirect()->back();
-    }
+    // public function import(Request $request){
+    //     Excel::import(new Importuser, $request->file('file')->store('files'));
+    //     return redirect()->back();
+    // }
 }

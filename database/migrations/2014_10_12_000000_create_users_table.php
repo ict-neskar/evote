@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('password');
             $table->boolean('has_voted')->default(0);
             $table->integer('candidate_voted')->default(0);
-            $table->integer('class_id');
+            $table->integer('class_id')->default(1);
             // $table->foreign('class_id')->references('id')->on('class');
             $table->rememberToken();
             $table->timestamps();

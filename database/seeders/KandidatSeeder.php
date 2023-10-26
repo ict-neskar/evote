@@ -20,13 +20,11 @@ class KandidatSeeder extends Seeder
             'image' => 'kandidat-1-profile.png',
             'name' => 'Nayif Aditya',
             'deskripsi' => 'Halo saya Nayif Aditya. Bersekolah di SMKN 1 KARAWANG. Yang memang dari dulu sudah saya impikan. Saya orangnya mencoba bisa berguna di keluarga dan di sekolah. Saya yang mencoba untuk mengerti semua orang agar orang bisa merasakan bahwa hidup itu tidak sendirian ada teman dan sahabat yang selalu ada dan membantu jika adanya kesulitan. Saya yang mencoba agar semua orang tetap bahagia dengan lelucon lelucon saya yang kadang pun ga lucu. Mempelajari bahasa tubuh. Nada berbicara. Membaca pikiran seseorang itu sangat menyenangkan apalagi saya bisa tahu apa yang mereka sedang rasakan. Dengan semua itu saya agar semuanya bisa berteman dengan saya.',
-            'visi' => 'Menjadikan organisasi osis dinamis, fleksibel dan kreatif bersamaan solidaritas dan keharmonisan didalam organisasi yang di landasakan iman dan taqwa.',
-            'misi' => 'Menanamkan pemikiran positif dan kritis kepada anggota OSIS SMKN 1 Karawang
-                        Membangun karakter dan perilaku yang baik untuk anggota OSIS yang nantinya akan menjadi contoh warga sekolah SMKN 1 Karawang
-                        Menjadikan OSIS sebagai tempat / wadah aspirasi dari warga sekolah untuk sekolah SMKN 1 Karawang
-                        Membangun komunikasi dan kebersamaan yang erat antara anggota OSIS dan organisasi lainnya termasuk warga sekolah
-                        Mendorong dan mendukung semua kegiatan yang bersifat positif yang diadakan organisasi, eskul, maupun komunitas yang ada dalam sekolah SMKN 1 Karawang
-                        Memunculkan program - program yang bisa mengasah potensi bakat dalam siswa siswi SMKN 1 Karawang',
+            'visi' => 'Menjadikan OSIS SMKN 1 KARAWANG sebagai Organisasi yang berperan aktif dalam mengembangkan potensi siswa, menciptakan lingkungan yang mendukung perkembangan akademik dan non-akademik, serta menjadi contoh organisasi yang memiliki nilai-nilai moral yang tinggi',
+            'misi' => '1. Membangun wadah yang inklusif dan beragam bagi organisasi dan ekstrakulikuler di SMK Negeri 1 Karwang 
+                        2. Memaksimalkan Proker dari setiap Seksi bidang agar efektif 
+                        3. Menjunjung tinggi nilai taqwa, integritas, dan karakter yang mulia dalam setiap aktivitas OSIS 
+                        4. Melaksanakan Proker dari BPH sebelumnya yang belum Terealisasikan',
             'votes' => 0,
             'program' => 'Program kotak aspirasi adalah program yang membawakan tujuan untuk siswa/siswi sekolah bisa menyalurkan pendapat mereka ataupun keinginan mereka yang bersifat positif dan baik untuk sekolah maupun OSIS itu sendiri.',
             'video' => 'https://www.youtube.com/embed/BOkW8yJEVl0',

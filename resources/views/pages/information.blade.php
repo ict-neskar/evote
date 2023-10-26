@@ -68,68 +68,28 @@
 
     <!-- Panitia Kami -->
     <div class="margin-bottom-50 margin-md-bottom-25 margin-xs-bottom-15 margin-top-100 margin-x-45 margin-xs-10">
-        <h1 class="text-center fw-bold">Panitia Pemilihan Ketua OSIS</h1>
+        <h1 class="text-center fw-bold">Panitia Web Dev E-Vote 2023</h1>
         <span class="under-line"></span>
         <p class="text-center width-75p mx-auto mt-3" data-aos="fade-down" data-aos-duration="1000">Berikut adalah panitia
-            yang berperan dalam pemilihan calon Ketua OSIS</p>
+            yang berperan dalam pembuatan website e-vote 2023</p>
     </div>
     <div class="margin-x-45 margin-xs-x-10 margin-bottom-100 overflow-hidden">
         <div class="row position-relative overflow-hidden">
             <div class="col-10 col-md-3 col-sm-6 padding-03 mx-auto mx-sm-0" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-delay="0">
-                <img src="/assets/images/FotoPanitia/panitia (1).jpg" alt="" class="w-100 rounded-3 bg-warning">
+                <img src="/assets/images/FotoPanitia/nayif.png" alt="" class="w-100 rounded-3 bg-warning">
             </div>
             <div class="col-10 col-md-3 col-sm-6 padding-03 mx-auto mx-sm-0" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-delay="0">
-                <img src="/assets/images/FotoPanitia/panitia (2).jpg" alt="" class="w-100 rounded-3 bg-warning">
+                <img src="/assets/images/FotoPanitia/midori.png" alt="" class="w-100 rounded-3 bg-warning">
             </div>
             <div class="col-10 col-md-3 col-sm-6 padding-03 mx-auto mx-sm-0" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-delay="0">
-                <img src="/assets/images/FotoPanitia/panitia (3).jpg" alt="" class="w-100 rounded-3 bg-warning">
+                <img src="/assets/images/FotoPanitia/eful.png" alt="" class="w-100 rounded-3 bg-warning">
             </div>
             <div class="col-10 col-md-3 col-sm-6 padding-03 mx-auto mx-sm-0" data-aos="fade-up" data-aos-duration="1000"
                 data-aos-delay="0">
-                <img src="/assets/images/FotoPanitia/panitia (4).jpg" alt="" class="w-100 rounded-3 bg-warning">
-            </div>
-            <div class="col-10 col-md-3 col-sm-6 padding-03 mx-auto mx-sm-0" data-aos="fade-up" data-aos-duration="1000"
-                data-aos-delay="0">
-                <img src="/assets/images/FotoPanitia/panitia (5).jpg" alt="" class="w-100 rounded-3 bg-warning">
-            </div>
-            <div class="col-10 col-md-3 col-sm-6 padding-03 mx-auto mx-sm-0" data-aos="fade-up" data-aos-duration="1000"
-                data-aos-delay="0">
-                <img src="/assets/images/FotoPanitia/panitia (6).jpg" alt="" class="w-100 rounded-3 bg-warning">
-            </div>
-            <div class="col-10 col-md-3 col-sm-6 padding-03 mx-auto mx-sm-0" data-aos="fade-up" data-aos-duration="1000"
-                data-aos-delay="0">
-                <img src="/assets/images/FotoPanitia/panitia (7).jpg" alt="" class="w-100 rounded-3 bg-warning">
-            </div>
-            <div class="col-10 col-md-3 col-sm-6 padding-03 mx-auto mx-sm-0" data-aos="fade-up" data-aos-duration="1000"
-                data-aos-delay="0">
-                <img src="/assets/images/FotoPanitia/panitia (8).jpg" alt="" class="w-100 rounded-3 bg-warning">
-            </div>
-            <div class="col-10 col-md-3 col-sm-6 padding-03 mx-auto mx-sm-0" data-aos="fade-up" data-aos-duration="1000"
-                data-aos-delay="0">
-                <img src="/assets/images/FotoPanitia/panitia (9).jpg" alt="" class="w-100 rounded-3 bg-warning">
-            </div>
-            <div class="col-10 col-md-3 col-sm-6 padding-03 mx-auto mx-sm-0" data-aos="fade-up" data-aos-duration="1000"
-                data-aos-delay="0">
-                <img src="/assets/images/FotoPanitia/panitia (10).jpg" alt="" class="w-100 rounded-3 bg-warning">
-            </div>
-            <div class="col-10 col-md-3 col-sm-6 padding-03 mx-auto mx-sm-0" data-aos="fade-up" data-aos-duration="1000"
-                data-aos-delay="0">
-                <img src="/assets/images/FotoPanitia/panitia (11).jpg" alt="" class="w-100 rounded-3 bg-warning">
-            </div>
-            <div class="col-10 col-md-3 col-sm-6 padding-03 mx-auto mx-sm-0" data-aos="fade-up" data-aos-duration="1000"
-                data-aos-delay="0">
-                <img src="/assets/images/FotoPanitia/panitia (12).jpg" alt="" class="w-100 rounded-3 bg-warning">
-            </div>
-            <div class="col-10 col-md-3 col-sm-6 padding-03 mx-auto mx-sm-0" data-aos="fade-up" data-aos-duration="1000"
-                data-aos-delay="0">
-                <img src="/assets/images/FotoPanitia/panitia (13).jpg" alt="" class="w-100 rounded-3 bg-warning">
-            </div>
-            <div class="col-10 col-md-3 col-sm-6 padding-03 mx-auto mx-sm-0" data-aos="fade-up" data-aos-duration="1000"
-                data-aos-delay="0">
-                <img src="/assets/images/FotoPanitia/panitia (14).jpg" alt="" class="w-100 rounded-3 bg-warning">
+                <img src="/assets/images/FotoPanitia/altaf.png" alt="" class="w-100 rounded-3 bg-warning">
             </div>
         </div>
     </div>
@@ -143,6 +103,6 @@
     <p class="width-60p width-md-80p text-center mx-auto margin-bottom-100 fw-semibold" data-aos="fade-down"
         data-aos-duration="1000" data-aos-delay="600">
         Website ini dirancang dan dikelola oleh tim Pejuang Daring untuk Pemilihan Ketua OSIS SMKN 1 Karawang Tahun
-        2022/2023
+        2023/2024
     </p>
 @endsection

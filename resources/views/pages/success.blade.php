@@ -13,7 +13,7 @@
     <div class="height-100 position-relative width-100p overflow-hidden">
         <div class="position-absolute top-50 start-50 translate-middle width-50 width-md-90 z-1">
             <div class="d-flex flex-column justify-content-center margin-bottom-25">
-                <img src="/assets/images/UI/Icon/logo-red.svg" alt="" class="width-10 width-md-20 width-xs-30 mx-auto text-center margin-bottom-20">
+                <img src="/assets/images/UI/Icon/logo-white.png" alt="" class="width-10 width-md-20 width-xs-30 mx-auto text-center margin-bottom-20">
                 <span class="width-25p mx-auto red">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-patch-check-fill"
                         viewBox="0 0 16 16">
@@ -24,9 +24,9 @@
             </div>
             
             <h2 class="fontw-7 text-center">Terimakasih {{ Auth::user()->name }} !</h2>
-            <h5 class="fontw-6 text-center margin-bottom-15">Dari kelas {{ Auth::user()->class->kelas }} {{ Auth::user()->class->jurusans }} {{ Auth::user()->class->rombel }} </h5>
+            {{-- <h5 class="fontw-6 text-center margin-bottom-15">Dari kelas {{ Auth::user()->class->kelas }} {{ Auth::user()->class->jurusans }} {{ Auth::user()->class->rombel }} </h5> --}}
             <p class="text-center width-35 width-md-70p width-xs-100p mx-auto">Dengan memilih, anda sudah melaksanakan Pemilihan Calon Ketua OSIS
-                SMKN 1 Karawang tahun 2022/2023
+                SMKN 1 Karawang tahun 2023/2024
             </p>
         </div>
         <img src="/assets/images/UI/Background/background-konfirmasi.svg" alt="" class="position-absolute top-50 start-80 start-md-90 start-lg-100 translate-middle height-100 height-md-80p">

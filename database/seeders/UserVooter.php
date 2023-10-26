@@ -24,9 +24,9 @@ class UserVooter extends Seeder
                 User::create([
                     'name' => $row['0'],
                     'password' => bcrypt($row['1']),
-                    'has_voted' =>$row['2'],
-                    'candidate_voted' => $row['3'],
-                    'class_id' => $row['4'],
+                    // 'has_voted' => $row['2'],
+                    // 'candidate_voted' => $row['3'],
+                    // 'class_id' => $row['4'],
                     'nis'   => $row['5'],
                 ]);    
             }
