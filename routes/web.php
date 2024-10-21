@@ -7,6 +7,7 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\VotingController;
 use App\Http\Controllers\CandidateController;
 use App\Http\Controllers\AdminCandidateController;
+use App\Http\Controllers\TahunAjaranController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,7 @@ Route::resource('/admin/user', UserController::class)->middleware(['auth', 'is-a
 Route::get('/admin/users/import',[UserController::class,'importView'])->name('import-view')->middleware(['auth', 'is-admin']);;
 Route::post('/admin/user/import',[UserController::class,'import'])->name('import')->middleware(['auth', 'is-admin']);;
 // Route::get('/admin/kandidat/slug', [UserController::class, 'slug'])->middleware(['auth', 'is-admin']);
+Route::resource('/admin/tahun', TahunAjaranController::class);
 
 
 // AdminPagesCandidate
@@ -57,8 +59,10 @@ Route::get('informasi', [PagesController::class, 'informationPage'])->name('info
             //         return view('dashboard');
             //     })->name('dashboard');
             // });
-            
+
             Route::get('/test', function () {
                 return view('pages.admin.users.create');
             })->name('dashboard');
-        
+
+
+

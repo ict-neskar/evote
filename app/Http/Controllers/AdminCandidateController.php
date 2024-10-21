@@ -96,7 +96,7 @@ class AdminCandidateController extends Controller
 
     public function destroy()
     {
-        Candidate::where('id','<', 500)->delete();
+        Candidate::where('id','<', value: 500)->delete();
 
         return redirect()->to('/admin/kandidat')->with('success', 'Data kandidat berhasil di hapus.');
     }

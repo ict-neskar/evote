@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>E - Vote | @yield('title')</title>
-    
+
     <link href="/assets/images/UI/Icon/logo-icon-white.svg" rel="shortcut icon" />
     <link rel="stylesheet" href="/assets/css/main/app.css">
     <link rel="stylesheet" href="/assets/css/main/app-dark.css">
     <link rel="shortcut icon" href="/assets/images/logo/favicon.svg" type="image/x-icon">
     <link rel="shortcut icon" href="/assets/images/logo/favicon.png" type="image/png">
-    
+
     <link rel="stylesheet" href="/assets/css/shared/iconly.css">
     <link rel="stylesheet" href="/assets/extensions/chart.js/Chart.min.css">
     <link rel="stylesheet" href="/assets/extensions/quill/quill.snow.css">
     <link rel="stylesheet" href="/assets/extensions/quill/quill.bubble.css">
     <link rel="stylesheet" href="/assets/extensions/simple-datatables/style.css">
     <link rel="stylesheet" href="/assets/css/pages/simple-datatables.css">
-    
+
     @stack('addon')
 
     <script src="https://cdn.tiny.cloud/1/2cj4v0itcxtk8lrl33mvg8hjzuf5idqobtehi3vyo2fpdln5/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
@@ -30,7 +30,7 @@
           menubar: true
         });
     </script>
-      
+
 </head>
 
 <body>
@@ -63,7 +63,7 @@
                                 <span>Home</span>
                             </a>
                         </li>
-                        
+
                         <li class="sidebar-item {{ (request()->is('admin')) ? 'active' : '' }}">
                             <a href="/admin" class='sidebar-link'>
                                 <i class="bi bi-grid-fill"></i>
@@ -72,7 +72,7 @@
                         </li>
 
                         <li class="sidebar-title">Menu</li>
-                
+
 
                         <li class="sidebar-item {{ (request()->is('admin/kandidat', 'admin/kandidat/create', 'admin/kandidat/edit')) ? 'active' : '' }}">
                             <a href="/admin/kandidat" class='sidebar-link'>
@@ -86,7 +86,13 @@
                                 <i class="bi bi-people-fill"></i>
                                 <span>Siswa</span>
                             </a>
-                        </li>                
+                        </li>
+                        <li class="sidebar-item {{ (request()->is('admin/tahun', 'admin/tambah')) ? 'active' : '' }}">
+                            <a href="/admin/tahun" class='sidebar-link'>
+                                <i class="bi bi-people-fill"></i>
+                                <span>Tahun Ajaran</span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -98,7 +104,7 @@
                     <i class="bi bi-justify fs-3"></i>
                 </a>
             </header>
-            
+
             @yield('content')
 
             <footer class="">
