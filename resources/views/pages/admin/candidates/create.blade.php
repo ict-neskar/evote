@@ -28,7 +28,7 @@
                                 @error('votes')<small class="text-red-600 font-medium block my-2" >{{ $message }}</small>@enderror
                             </div>
                         </div>
-                    </div>    
+                    </div>
                     <div class="row">
                         <div class="col-12 col-sm-6">
                             <div class="form-group">
@@ -47,12 +47,21 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">                       
+                    <div class="row">
                         <div class="col-12 col-sm-6">
                             <div class="form-group">
-                                <label for="class_id">ID kelas</label>
-                                <input type="text" name="class_id" class="form-control" id="class_id" placeholder="Masukan id kelas" value="{{ old('name') }}">
-                                @error('class_id')<small class="text-red-600 font-medium block my-2">{{ $message }}</small>@enderror
+                                <label for="class_id">KELAS</label>
+                                <select name="class_id" class="form-control @error('class_id') is-invalid @enderror">
+                                    <option value="">Pilih Jurusan</option>
+                                    @foreach($classes as $kelasId) <!-- Ensure you are using $classes -->
+                                        <option value="{{ $kelasId->class_id }}">{{ $kelasId->jurusans }}</option> <!-- Display class name -->
+                                    @endforeach
+                                </select>
+
+
+                                @error('nisn')
+                                    <span class="error invalid-feedback" style="display: inline">{{ $message }}</span>
+                                @enderror
                             </div>
                             <div class="form-group">
                                 <label for="slug" class="form-label">Candidate Slug</label>
@@ -109,7 +118,7 @@
     <script>
         const name = document.getElementById('name');
         const slug = document.getElementById('slug');
-    
+
         name.addEventListener('change', async function() {
             const res = await fetch(`/admin/kandidat/slug?${
                 new URLSearchParams({name: this.value})
@@ -119,5 +128,5 @@
             slug.value = data.slug;
         });
     </script>
-    
+
 @endsection

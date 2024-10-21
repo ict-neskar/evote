@@ -46,7 +46,7 @@ class AdminCandidateController extends Controller
 
         Candidate::create($validatedData);
 
-        return redirect()->to('/admin/kandidat')->with('success', 'Berhasil membuat kandidat baru.');
+        return redirect()->to('/admin/kandidat',)->with('success', 'Berhasil membuat kandidat baru.');
     }
 
     public function show(Candidate $candidate)
